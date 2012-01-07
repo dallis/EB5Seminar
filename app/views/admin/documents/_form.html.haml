@@ -1,4 +1,4 @@
-= form_for(setup_document @document), :html => {:multipart => true} do |f|
+= form_for [:admin, (setup_document(@document))] do |f|
   -if @document.errors.any?
     #error_explanation
       %h2= "#{pluralize(@document.errors.count, "error")} prohibited this document from being saved:"
@@ -12,9 +12,10 @@
   .field
     = f.label :description
     = f.text_area :description
-  %h2 Tasks
+  .field
     = f.fields_for :attachments do |ff|
       %div        
+        = ff.text_field :title
         = ff.file_field :attachment
         - if ff.object.persisted?
           = ff.check_box :_destroy

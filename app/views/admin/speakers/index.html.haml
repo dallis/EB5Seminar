@@ -18,10 +18,10 @@
       %td= speaker.about
       %td= speaker.photo
       %td= speaker.priority
-      %td= link_to 'Show', speaker
-      %td= link_to 'Edit', edit_speaker_path(speaker)
-      %td= link_to 'Destroy', speaker, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to 'Show', [:admin, speaker]
+      %td= link_to 'Edit', [:edit, :admin, speaker]
+      %td= link_to 'Destroy', [:admin, speaker], :confirm => 'Are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Speaker', new_speaker_path
+= link_to 'New Speaker', [:new, :admin, :speaker]

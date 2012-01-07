@@ -20,10 +20,10 @@
       %td= sponsor.website
       %td= sponsor.email
       %td= sponsor.priority
-      %td= link_to 'Show', sponsor
-      %td= link_to 'Edit', edit_sponsor_path(sponsor)
-      %td= link_to 'Destroy', sponsor, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to 'Show', [:admin, sponsor]
+      %td= link_to 'Edit', [:edit, :admin, sponsor]
+      %td= link_to 'Destroy', [:admin, sponsor], :confirm => 'Are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Sponsor', new_sponsor_path
+= link_to 'New Sponsor', [:new, :admin, :sponsor]
