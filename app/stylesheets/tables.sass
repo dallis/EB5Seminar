@@ -3,7 +3,7 @@ $table_border: 1px solid #dddddd
 table, tr, td, th
   border: $table_border
 
-table.zebra
+.text_block table, table.zebra
   vertical-align: baseline
   background: transparent
   border-collapse: collapse
@@ -11,7 +11,6 @@ table.zebra
   margin-bottom: 1.4em
   width: 100%
   margin: 12px 1px
-  font-size: 12px
   th, td, caption, thead
     padding: 4px 4px 4px 4px
     border: $table_border
@@ -22,7 +21,6 @@ table.zebra
         font-weight: bold
         border: $table_border
         background: #ECECEC
-        text-align: left
   tr.even
     td
       background: #ececec
@@ -40,15 +38,3 @@ table.zebra
   tr
     th
       font-weight: bold
-      text-align: left
-      
-
-table
-  td.table_block
-    background: #ececec
-    color: black
-    font-weight: bold
-    
-table.vtop    
-  tr td
-    vertical-align: top
