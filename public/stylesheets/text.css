@@ -1,14 +1,55 @@
-/* line 4, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 151, ../../app/stylesheets/_utils.sass */
+a.as_button {
+  background: transparent url(/images/btns_13.png) no-repeat right 0;
+  color: white;
+  display: inline-block;
+  height: 43px;
+  padding-right: 24px;
+  text-decoration: none;
+  text-shadow: #4d639c 0 -1px 0;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  color: white;
+}
+/* line 177, ../../app/stylesheets/_utils.sass */
+a.as_button:visited {
+  color: white;
+}
+/* line 181, ../../app/stylesheets/_utils.sass */
+a.as_button:hover {
+  background: transparent url(/images/btns_13.png) no-repeat right -42px;
+  color: white;
+  outline: none;
+  text-shadow: #666666 0 -1px 0;
+}
+/* line 191, ../../app/stylesheets/_utils.sass */
+a.as_button:hover span {
+  background: transparent url(/images/btns_12.png) no-repeat 0 -42px;
+}
+/* line 195, ../../app/stylesheets/_utils.sass */
+a.as_button span {
+  background: transparent url(/images/btns_12.png) no-repeat 0 0;
+  display: block;
+  padding: 13px 0 17px 26px;
+}
+/* line 203, ../../app/stylesheets/_utils.sass */
+a.as_button strong {
+  text-transform: none;
+}
+
+/* line 4, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 body {
   font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
-/* line 6, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 6, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 a:focus {
   outline: 1px dotted invert;
 }
 
-/* line 8, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 8, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 hr {
   border-color: #cccccc;
   border-style: solid;
@@ -17,52 +58,52 @@ hr {
   height: 0;
 }
 
-/* line 14, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 14, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 h1 {
   font-size: 25px;
 }
 
-/* line 16, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 16, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 h2 {
   font-size: 23px;
 }
 
-/* line 18, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 18, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 h3 {
   font-size: 21px;
 }
 
-/* line 20, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 20, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 h4 {
   font-size: 19px;
 }
 
-/* line 22, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 22, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 h5 {
   font-size: 17px;
 }
 
-/* line 24, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 24, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 h6 {
   font-size: 15px;
 }
 
-/* line 26, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 26, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 ol {
   list-style: decimal;
 }
 
-/* line 28, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 28, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 ul {
   list-style: square;
 }
 
-/* line 30, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 30, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 li {
   margin-left: 30px;
 }
 
-/* line 32, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.10.0/stylesheets/960/_text.sass */
+/* line 32, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
 p,
 dl,
 hr,
@@ -81,277 +122,272 @@ fieldset {
   margin-bottom: 20px;
 }
 
-/* line 14, ../../app/stylesheets/text.sass */
+/* line 16, ../../app/stylesheets/text.sass */
 .text_right {
   text-align: right;
 }
 
-/* line 17, ../../app/stylesheets/text.sass */
+/* line 19, ../../app/stylesheets/text.sass */
 .text_left {
   text-align: left;
 }
 
-/* line 20, ../../app/stylesheets/text.sass */
+/* line 22, ../../app/stylesheets/text.sass */
 .text_center {
   text-align: center;
 }
 
-/* line 23, ../../app/stylesheets/text.sass */
-.red_text {
-  color: red;
-}
 /* line 25, ../../app/stylesheets/text.sass */
-.red_text:hover {
-  color: red;
+.center_text {
+  text-align: center;
 }
 
 /* line 28, ../../app/stylesheets/text.sass */
+span.noticed_text {
+  font-size: 13px;
+}
+
+/* line 31, ../../app/stylesheets/text.sass */
+.red_text {
+  color: red;
+}
+/* line 33, ../../app/stylesheets/text.sass */
+.red_text:hover, .red_text:visited {
+  color: red;
+}
+
+/* line 36, ../../app/stylesheets/text.sass */
+.notice_color {
+  color: #8fbe00;
+}
+/* line 38, ../../app/stylesheets/text.sass */
+.notice_color:hover, .notice_color:visited {
+  color: #8fbe00;
+}
+
+/* line 41, ../../app/stylesheets/text.sass */
 .green_text {
   color: green;
 }
-/* line 30, ../../app/stylesheets/text.sass */
-.green_text:hover {
+/* line 43, ../../app/stylesheets/text.sass */
+.green_text:hover, .green_text:visited {
   color: green;
 }
 
-/* line 33, ../../app/stylesheets/text.sass */
+/* line 46, ../../app/stylesheets/text.sass */
 .yellow_text {
   color: yellow;
 }
-/* line 35, ../../app/stylesheets/text.sass */
-.yellow_text:hover {
+/* line 48, ../../app/stylesheets/text.sass */
+.yellow_text:hover, .yellow_text:visited {
   color: yellow;
 }
 
-/* line 38, ../../app/stylesheets/text.sass */
+/* line 51, ../../app/stylesheets/text.sass */
 .blue_text {
   color: blue;
 }
-/* line 40, ../../app/stylesheets/text.sass */
-.blue_text:hover {
+/* line 53, ../../app/stylesheets/text.sass */
+.blue_text:hover, .blue_text:visited {
   color: blue;
 }
 
-/* line 43, ../../app/stylesheets/text.sass */
+/* line 56, ../../app/stylesheets/text.sass */
 .brown_text {
   color: brown;
 }
-/* line 45, ../../app/stylesheets/text.sass */
+/* line 58, ../../app/stylesheets/text.sass */
 .brown_text:hover {
   color: brown;
 }
 
-/* line 48, ../../app/stylesheets/text.sass */
+/* line 61, ../../app/stylesheets/text.sass */
 .white_text {
   color: white;
 }
-/* line 50, ../../app/stylesheets/text.sass */
+/* line 63, ../../app/stylesheets/text.sass */
 .white_text:hover {
   color: white;
 }
 
-/* line 55, ../../app/stylesheets/text.sass */
+/* line 68, ../../app/stylesheets/text.sass */
 html dl dt {
   font-weight: bold;
 }
-/* line 57, ../../app/stylesheets/text.sass */
+/* line 70, ../../app/stylesheets/text.sass */
 html dl dt, html dl dl {
   padding: 0.3em 0;
 }
 
-/* line 66, ../../app/stylesheets/text.sass */
-.add_button {
+/* line 79, ../../app/stylesheets/text.sass */
+.remove_user_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/add.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/user--minus.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 69, ../../app/stylesheets/text.sass */
-.edit_button {
+/* line 82, ../../app/stylesheets/text.sass */
+.share_user_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/application_edit.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/user-share.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 72, ../../app/stylesheets/text.sass */
-.show_button {
+/* line 85, ../../app/stylesheets/text.sass */
+.add_company_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/application_go.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/building--plus.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 75, ../../app/stylesheets/text.sass */
-.delete_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/application_delete.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 78, ../../app/stylesheets/text.sass */
-.list_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/table.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 81, ../../app/stylesheets/text.sass */
+/* line 88, ../../app/stylesheets/text.sass */
 .cancel_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/table_delete.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/navigation-180-frame.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 84, ../../app/stylesheets/text.sass */
-.roles_button {
+/* line 91, ../../app/stylesheets/text.sass */
+.edit_company_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/shield_go.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/building--pencil.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 87, ../../app/stylesheets/text.sass */
-.activate_button {
+/* line 94, ../../app/stylesheets/text.sass */
+.show_company_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/note_add.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/building--arrow.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 90, ../../app/stylesheets/text.sass */
-.suspend_button {
+/* line 97, ../../app/stylesheets/text.sass */
+.stat_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/note_delete.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/building--arrow.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 93, ../../app/stylesheets/text.sass */
-.restore_button {
+/* line 100, ../../app/stylesheets/text.sass */
+.delete_company_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/note_go.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/building--minus.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 96, ../../app/stylesheets/text.sass */
-.projects_button {
+/* line 103, ../../app/stylesheets/text.sass */
+.delete_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/page_white_text.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/2.0/delete.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 99, ../../app/stylesheets/text.sass */
-.archive_button {
+/* line 106, ../../app/stylesheets/text.sass */
+.edit_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/package_add.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/notebook--pencil.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 102, ../../app/stylesheets/text.sass */
-.check_button {
+/* line 109, ../../app/stylesheets/text.sass */
+.show_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/accept.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/notebook--arrow.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 105, ../../app/stylesheets/text.sass */
-.discuss_button {
+/* line 112, ../../app/stylesheets/text.sass */
+.add_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/comment_edit.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/2.0/add.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 108, ../../app/stylesheets/text.sass */
-.close_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/drive_go.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 111, ../../app/stylesheets/text.sass */
-.view_buttom {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/page_go.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 114, ../../app/stylesheets/text.sass */
-.gallery_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/image_add.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 117, ../../app/stylesheets/text.sass */
-.change_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/page_white_wrench.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 120, ../../app/stylesheets/text.sass */
-.dashboard_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/application_home.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 123, ../../app/stylesheets/text.sass */
-.logout_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/disconnect.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 126, ../../app/stylesheets/text.sass */
-.resources_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/table_multiple.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 129, ../../app/stylesheets/text.sass */
-.questions_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/help.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 132, ../../app/stylesheets/text.sass */
-.translations_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/table_relationship.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 135, ../../app/stylesheets/text.sass */
+/* line 115, ../../app/stylesheets/text.sass */
 .remove_item_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/fileclose.png) no-repeat center left;
-  font-size: 12px;
+  background: url(/images/fugue/fileclose.png) no-repeat center left;
+  font-size: 13px;
 }
 
-/* line 138, ../../app/stylesheets/text.sass */
+/* line 118, ../../app/stylesheets/text.sass */
+.public_view {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/blue-document--arrow.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 121, ../../app/stylesheets/text.sass */
+.index_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/blue-document-list.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 124, ../../app/stylesheets/text.sass */
+.approve_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/tick-circle.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 127, ../../app/stylesheets/text.sass */
+.sort_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/sort.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 130, ../../app/stylesheets/text.sass */
+.download_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/document--arrow.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 133, ../../app/stylesheets/text.sass */
+.map_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/map.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 136, ../../app/stylesheets/text.sass */
+.files_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/folder.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 139, ../../app/stylesheets/text.sass */
+.share_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/user-share.png) no-repeat center left;
+  font-size: 13px;
+}
+
+/* line 142, ../../app/stylesheets/text.sass */
 .bold_text {
   font-weight: bold;
 }

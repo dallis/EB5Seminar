@@ -1,14 +1,116 @@
 .simple_form
+  padding: 18px 0px
+  float: left
+  width: 100%
+  
+  div.form_field
+    width: 220px
+    margin-right: 10px
+    float: left
+    input, select
+      width: 220px
+    &.text_area
+      width: 450px
+    &.just_little
+      width: 80px
+      input[type='text'], select
+        width: 80px
+    &.just_smaller
+      width: 100px
+      input[type='text'], select
+        width: 100px
+    &.just_middle
+      width: 120px
+      input[type='text'], select
+        width: 120px
+    &.title
+      font-weight: bold
+      padding-bottom: 9px
+    &.radio
+      label.inline, input, select
+        display: inline
+        width: auto
+  
+  div.input
+    float: left
+    width: 100%
+    &:hover
+  
+  .map_canvas_helper
+    margin-left: 215px
+  #map_canvas
+    float: auto
+    width: 600px
+    height: 400px
+    margin-left: 215px
+    margin-bottom: 20px
+    div
+      float: auto
+      width: auto
+      text-align: auto
+    label, input
+      float: auto
+      width: auto
+      text-align: auto
+
   label 
-    margin: 2px 0
-    display: block
+    float: left
+    font-size: $base_font_size - 1px
+    height: auto
+    line-height: $base_font_size + 4px
+    min-height: $base_font_size + 4px
+    padding: 0
+    padding-right: 6px
+    width: $l_width
     color: #333
-    font-weight: bold
-    font-size: 14px
-    line-height: 19px
+    font-weight: normal
+    
+  div.password, div.string
+    input
+      //background: transparent url(/images/ibg.gif) repeat-x 0px 0px
+      float: left
+      font-size: $base_font_size
+      padding: 4px 6px
+      width: 320px
+      border: 1px solid $border_color
+    input.date_picker
+      width: 100px
+
+  div.text
+    textarea
+      //background: transparent url(/images/ibg.gif) repeat-x 0px 0px
+      font-size: $base_font_size
+      padding: 4px 6px
+      border: 1px solid $border_color
+  
+  div.select select
+    float: left
+    font-size: $base_font_size
+    border: 1px solid gainsboro
+    
+  div.field_with_errors
+    label.required
+
+  div.text
+    textarea
+      width: 600px
 
   div.input
     margin-bottom: 10px
+    
+  div.input.check_boxes
+    label.check_boxes
+      float: left
+      width: 99%
+      font-weight: normal
+      padding-left: 0
+      color: #333
+      height: $base_font_size + 6px
+      min-height: $base_font_size + 6px
+      line-height: $base_font_size + 6px
+      font-size: $base_font_size + 2px
+    label.collection_check_boxes
+      width: 40%
     
   div.boolean 
     label, input
@@ -23,29 +125,37 @@
     margin-left: 2px
 
   .error 
-    font-size: 11px
+    font-size: $base_font_size - 2px
     color: #D00
     display: block
+    padding-top: 6px
   
   .hint
-    font-size: 11px
+    font-size: $base_font_size - 2px
     color: #555
     display: block
     font-style: italic
-
-  input.text, input.string, input.password, textarea, select
-    background: white
-    border: 1px solid #DDD
-    padding: 3px 4px
-    font-size: 12px
-    line-height: 14px
-    &:hover, &:focus
-      border: 1px solid #ccc
-
-  input.button
-    padding: 2px 4px
-
+    padding-top: 6px
+    
+  .buttons
+    padding-top: 6px
+    padding-left: $l_width + 0px
+    clear: both
+    
   abbr
     color: red
     text-decoration: none
-    border-bottom: 0 none    
+    border-bottom: 0 none
+    
+.ui-datepicker-trigger
+  padding-top: 6px
+  
+.form2
+  .row
+    margin-bottom: 6px
+  label
+    display: block  
+  abbr
+    color: red
+    text-decoration: none
+    border-bottom: 0 none

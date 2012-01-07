@@ -1,0 +1,520 @@
+#home_splash
+  padding-left: 0px
+  position: relative
+  padding-bottom: 10px
+  &.mini_splash
+    #home_next, #home_previous
+      top: 145px
+    #home_slider
+      height: 304px
+      ul, ul li
+        height: 304px
+    .splash_box
+      height: 100px
+    h2
+      bottom: 45px
+    p
+      bottom: 10px
+  &.project_splash
+    #home_next, #home_previous
+      top: 170px
+    #home_slider
+      height: 380px
+      width: 630px
+      overflow: hidden
+      ul, ul li
+        height: 380px
+    .splash_box
+      height: 100px
+    h2
+      bottom: 45px
+    p
+      bottom: 10px      
+  #home_next, #home_previous
+    text-indent: -9999px
+    overflow: hidden
+    margin: 0
+    padding: 0
+    display: block
+    position: absolute
+    z-index: 1000
+    top: 190px
+    width: 32px
+    height: 50px
+    cursor: pointer
+  #home_previous
+    left: 30px
+    background: url(/images/left_white.png) no-repeat top left
+    display: block
+    width: 30px
+    height: 50px
+  #home_next
+    right: 30px
+    background: url(/images/right_white.png) no-repeat top left
+    display: block
+    width: 30px
+    height: 50px
+  #home_slider
+    height: 412px
+    ul
+      list-style-type: none
+      padding: 0
+      margin: 0
+      height: 412px
+      li
+        height: 412px
+        padding: 0
+        margin: 0
+        list-style-type: none
+        position: relative
+  .splash_box
+    position: absolute
+    bottom: 0px
+    left: 0px
+    height: 140px
+    width: 100%
+    background: #000
+    opacity: $box_opacity
+  h2
+    position: absolute
+    left: 20px
+    bottom: 90px
+    color: white
+    font-size: 26px
+  p
+    position: absolute
+    left: 20px
+    bottom: 15px
+    color: white
+    width: 500px
+    
+#home_images
+  text-align: center
+  padding-bottom: 10px
+  margin-bottom: 20px
+  border-bottom: 1px solid $border_color
+  img
+    padding-left: 20px
+    
+#home_text
+  padding-bottom: 30px
+  padding-top: 30px
+  h3 a
+    color: #333
+    text-decoration: none
+  
+.sections
+  width: 25%
+  float: left
+  border-right: 1px solid #eee
+  padding-bottom: 36px
+  min-height: 500px
+  h2
+    background: white
+    color: $section_bg
+    font-family: $menu_font
+    font-size: 14px
+    padding: 6px
+    padding-bottom: 0
+    line-height: 22px
+    text-transform: uppercase
+    margin-bottom: 0
+    font-weight: bold
+  ul
+    list-style-type: none
+    margin: 0
+    padding-left: 24px
+    li
+      list-style-type: none
+      //text-transform: uppercase
+      text-align: left
+      font-size: 14px
+      line-height: 22px
+      padding: 3px
+      border-bottom: 1px solid #eee
+      &:last-child
+        border-bottom: 1px solid white
+      &.selected
+        a
+          color: $section_bg
+      a
+        text-decoration: none
+        color: $text_color
+        font-weight: normal
+      &.active, &:hover
+        a
+          color: $section_bg
+
+.section_content  
+  width: 74%
+  float: right
+  h1
+    font-family: $menu_font
+    font-size: 17px
+    padding: 6px 0
+    padding-top: 6px
+    line-height: 22px
+    text-transform: uppercase    
+    font-weight: bold
+    
+h1.q
+  font-size: $base_font_size + 6px
+  line-height: $base_font_size + 12px
+  font-weight: bold
+  background: none
+  padding: 0
+  margin: 0
+  padding-bottom: 12px
+  
+dl.page_project_details
+  margin: 0
+  padding: 12px
+  background: gainsboro
+  text-transform: uppercase
+  dt
+    color: #333
+    padding: 0
+    padding-bottom: 3px
+    font-size: $base_font_size + 16px
+    line-height: $base_font_size + 16px
+    &.smaller
+      font-size: $base_font_size + 3px
+      line-height: $base_font_size + 3px
+      strong 
+        font-weight: bold
+    &.nuc
+      text-transform: none
+  dd
+    color: #666
+    padding-bottom: 12px
+    padding-left: 0
+    margin-left: 0
+    font-size: $base_font_size
+    &:last-child
+      padding-bottom: 0
+  
+dl.page_details
+  margin: 0
+  padding: 0
+  dt
+    color: $dt_color
+    text-transform: uppercase
+    padding-bottom: 6px
+    font-size: $base_font_size + 3px
+  dd
+    color: $dd_color
+    padding-bottom: 12px
+  &.just_smaller
+    padding-left: 16px
+    font-size: $base_font_size - 1px
+    line-height: $base_font_size + 1px
+    dt
+      font-size: $base_font_size - 1px
+      padding-bottom: 0px
+    dd
+      padding-bottom: 3px
+    
+ul.object_menu
+  border-bottom: 1px solid $page_menu_border_color
+  list-style-type: none
+  padding: 0
+  margin: 0
+  height: 21px
+  margin-bottom: 12px
+  li
+    span
+      background: $section_bg
+      color: white
+      padding: 1px 4px
+      +round_me(6px)
+      font-size: $base_font_size - 1px
+      line-height: $base_font_size - 1px
+    
+  li.active
+    background: $page_menu_active_bg
+    border-top: 1px solid $page_menu_border_color
+    border-left: 1px solid $page_menu_border_color
+    border-right: 1px solid $page_menu_border_color
+    a
+      color: $page_menu_active_text
+  li:hover a
+    text-decoration: underline
+  li
+    list-style-type: none
+    background: $page_menu_bg
+    display: inline
+    margin-right: 3px
+    padding: 6px 11px
+    a
+      color: $page_menu_text
+      text-decoration: none
+      
+ul.smaller_object_menu
+  border-bottom: 1px solid $page_menu_border_color
+  list-style-type: none
+  padding: 0
+  margin: 0
+  height: 21px
+  margin-bottom: 12px
+  li
+    span
+      background: $section_bg
+      color: white
+      padding: 1px 4px
+      +round_me(6px)
+      font-size: $base_font_size - 1px
+      line-height: $base_font_size - 1px
+    
+  li.active
+    background: $page_menu_active_bg
+    border-top: 1px solid $page_menu_border_color
+    border-left: 1px solid $page_menu_border_color
+    border-right: 1px solid $page_menu_border_color
+    a
+      color: $page_menu_active_text
+  li:hover a
+    text-decoration: underline
+  li.menu_spacer
+    margin-right: 6px
+  li
+    list-style-type: none
+    background: $page_menu_bg
+    display: inline
+    margin-right: 2px
+    padding: 6px 11px
+    a
+      color: $page_menu_text
+      text-decoration: none   
+      font-size: $base_font_size - 1px
+      
+.obj_title
+  background: none
+  color: $dt_color
+  margin: 0
+
+.obj_logo
+  float: left
+  margin-right: 12px
+  margin-bottom: 6px
+  
+.abbr
+  font-size: $base_font_size + 3px
+  padding-bottom: 12px
+  span
+    font-size: $base_font_size
+    color: $abbr_title_color
+  a
+    text-decoration: none
+    border-bottom: 1px dotted $abbr_color
+    color: $abbr_color
+    margin-right: 6px
+    
+.firm_logo  
+  width: 200px
+  float: left
+  text-align: right
+  img
+    text-align: right
+
+.firm_name
+  color: $dd_color
+  padding: 0
+  margin: 0
+  a
+    text-decoration: none
+    color: $dd_color
+    font-size: $base_font_size + 3px
+    font-weight: bold
+
+.firm_description
+  float: right
+  width: 500px
+  border-bottom: 1px solid $page_menu_border_color
+  padding-bottom: 12px
+  margin-bottom: 12px
+  &:last-child
+    border-bottom: 0 none
+  
+.sorted_object_letter
+  font-size: $base_font_size + 3px
+  color: $abbr_color
+  font-weight: bold
+
+.media_block
+  padding-bottom: 16px
+  
+ul.media_list
+  list-style-type: none
+  margin: 0
+  padding: 0
+  li
+    border: 1px solid #ccc
+    +round(6px)
+    margin: 0
+    padding: 0
+    list-style-type: none
+    float: left
+    width: auto
+    height: 195px
+    text-align: center
+    padding: 10px
+    margin-left: 5px
+    margin-right: 10px
+    margin-bottom: 15px
+    overflow: hidden
+    width: 195px
+    &:hover
+      +shadow(6px)
+    strong
+      display: block
+      font-size: $base_font_size + 1px
+      font-weight: bold
+      padding-top: 6px
+      padding-bottom: 6px
+    .media_thumb
+      width: auto
+      margin: 0 auto
+      text-align: center
+      overflow: hidden    
+    p
+      font-size: $base_font_size - 1px
+      color: #999
+      
+.video_player
+  padding-bottom: 16px
+  
+ul.projects_list
+  list-style-type: none
+  margin: 0
+  padding: 0
+  li
+    border: 1px solid #ccc
+    //+round(6px)
+    margin: 0
+    padding: 0
+    list-style-type: none
+    float: left
+    width: auto
+    text-align: left
+    padding: 10px
+    padding-bottom: 50px
+    margin-right: 5px
+    margin-bottom: 5px
+    overflow: hidden
+    width: 150px
+    height: 200px
+    position: relative
+    color: #999
+    &:hover
+      //+shadow(6px)
+    strong
+      display: block
+      font-size: $base_font_size
+      font-weight: bold
+      padding-top: 12px
+      padding-bottom: 2px
+    .location
+      position: absolute
+      left: 10px
+      bottom: 38px
+    .project_thumb
+      width: 149px
+      margin: 0 auto
+      text-align: center
+      overflow: hidden
+      height: 105px
+      vertical-align: middle
+    .category
+      font-size: $base_font_size - 2px
+      text-align: left
+      padding: 0
+      margin: 0
+      line-height: $base_font_size + 2px
+      strong
+        display: inline
+        padding: 0
+        color: #666
+        font-size: $base_font_size - 2px
+        line-height: $base_font_size + 2px
+    .info
+      position: absolute
+      background: #4D639C
+      border-top: 1px solid #ccc
+      color: white
+      left: 0
+      bottom: 0px
+      width: 100%
+      height: 36px
+      text-align: center
+      .price
+        color: white
+        margin-left: 10px
+        padding-top: 10px
+        font-size: 15px
+        color: white
+        span.amount
+          float: left
+        span.funding_required_eb5
+          float: right
+          color: yellow
+          padding-right: 10px
+        &.with_eb5
+          margin-left: 10px
+          padding-top: 2px
+          span
+            display: block
+        
+.media_categories
+  float: left
+  width: 24%
+.media_whole_list
+  float: right
+  width: 74%
+  
+ul.with_sub_sections
+  h3
+    padding-bottom: 0
+    margin-bottom: 0
+    padding-top: 6px
+    a.category_name
+      font-weight: bold
+      &.active, &:hover
+        color: $section_bg
+  li
+    &.active a, &:hover a
+      color: $text_color
+    ul
+      li
+        &:last-child
+          border-bottom: 0 none
+          padding-bottom: 0
+          margin-bottom: 0
+        &:hover a, &.active a
+          color: $section_bg
+
+h3.just_smaller_title
+  margin-top: 12px
+  padding-bottom: 6px
+  margin-bottom: 6px
+  border-bottom: 1px solid #efefef
+  
+#discuss_project
+  padding: 10px 0
+  text-align: center
+  
+fieldset.info_block
+  border: 1px solid #E1E3EC
+  padding: 6px 9px
+  width: 30%
+  float: left
+  margin-right: 1%
+  min-height: 130px
+  margin-bottom: 16px
+  +round(6px)
+  legend
+    padding: 0 3px
+    font-size: 14px
+    font-weight: bold
+    color: #3A69AD
+    &.red_text
+      color: #E32636

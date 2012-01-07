@@ -35,3 +35,12 @@ gem "responders", '0.6.2'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :development, :test do
+  gem 'compass', '0.10.5'
+  gem "compass-960-plugin", '0.9.13'
+end
+
+gem "simple_form", '1.3.1'
+
+gem "nested_form", :path => "vendor/gems/nested_form-10a77c978c1c" 

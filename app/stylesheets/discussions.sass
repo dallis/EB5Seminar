@@ -1,0 +1,79 @@
+ul.das
+  margin: 0
+  padding: 0
+  list-style-type: none
+  li.da
+    margin: 0
+    padding: 0
+    list-style-type: none
+    margin-bottom: 9px
+    padding-bottom: 9px
+    border-bottom: 1px solid #ececec
+    min-height: 90px
+    .da_numner
+      position: absolute
+      top: 8px
+      left: 0
+      width: 40px
+      text-align: center
+      font-size: $base_font_size + 2px
+      font-weight: bold
+    .da_user_photo
+      position: absolute
+      top: 4px
+      left: 0
+      width: 60px
+      height: 80px
+      text-align: center
+      font-size: $base_font_size + 2px
+      font-weight: bold      
+    .da_answer
+      padding-left: 70px
+      position: relative
+      p
+        padding: 0
+        margin: 0
+    .da_user
+      padding-left: 70px
+      font-size: $base_font_size - 2px
+      color: #999
+      clear: both
+      
+      
+ul.discussions
+  margin: 0
+  padding: 0
+  margin-top: 6px
+  list-style-type: none
+  li.discussion
+    margin: 0
+    padding: 0
+    list-style-type: none
+    margin-bottom: 9px
+    padding-bottom: 9px
+    border-bottom: 1px solid #ececec
+    &:last-child
+      border-bottom: 0 none
+    .discussion_title
+      float: left
+      width: 520px
+      p
+        padding: 0
+        margin: 0
+    .discussion_answers_count
+      float: right
+      width: 90px
+      text-align: right
+      font-size: $base_font_size + 1px
+      font-weight: bold
+      padding-right: 20px
+      position: relative
+      span
+        position: absolute
+        right: 10px
+        display: block
+        top: 6px
+    .discussion_user
+      font-size: $base_font_size - 2px
+      color: #999
+      clear: both

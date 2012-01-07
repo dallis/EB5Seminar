@@ -1,50 +1,50 @@
+@import "utils"
+@import "colors"
 @import "base"
-
-$border_for_notice: unquote("1px solid #ccc")
-
-=bordered($color: red)
-  border: unquote("1px solid #{$color}")
-
-=alpha-omega
-  +alpha
-  +omega
+@import "header"
+@import "footer"
+@import "simple_form"
+@import "autocomplete"
+@import "lists"
+@import "colorbox"
+@import "search"
+@import "links"
+@import "page"
+@import "buttons"
+@import "pagination"
+@import "cols"
+@import "editor"
+@import "tags"
+@import "comments"
+@import "posts"
+@import "questions"
+@import "events"
+@import "contact"
+@import "discussions"
+@import "progress"
+@import "langfixes"
 
 #root
-  +grid-system(16)
-  #header
-    +grid-container
-    height: 80px
-    #logo
-      +grid(6)
-      +alpha
-      h1
-        font-size: 2.3em
-    #nav_container
-      +grid(16)
-      +alpha
-      +omega
-      ul#nav
-        +float-right
-        +horizontal-list
-        height: 2em
-        padding-top: 1em
-        li
-          +text-right
-          a
-            font-size: 0.9em
-            padding: 2px 2px
+  margin-left: auto
+  margin-right: auto
+  width: $width
+  color: $text_color
+  //background: transparent url(/images/pattern_03.png) repeat top left
+  background: white
   #content
     .container
-      +grid(16)
+      margin: 0 auto
+      width: $content_width
+    .body
+      padding-bottom: 0
     div.flash
-      +grid(15)
-      margin-top: 0.6em
-      margin-bottom: 0.6em
+      margin-top: 12px
+      margin-bottom: 12px
+      width: 99%
       +alpha
       +omega
       padding: 4px 6px
       border: $border_for_notice
-      +rounded_corners
     div.flash.error
       color: #8a1f11
       background: #fff6bf
@@ -68,36 +68,20 @@ $border_for_notice: unquote("1px solid #ccc")
       padding-bottom: 1em
       h1, h2, h3
         margin: 0.5em 0
-
-#footer
-  hr
-    margin: 0
-  a
-    font-size: 0.9em
-    padding-top: 4px
-    float: right
+        
+#root.full_screen
+  margin-left: auto
+  margin-right: auto
+  width: 100%
+  #content
+    .container
+      margin: 0
+      width: 100%
+      padding: 0
 
 html body
-  line-height: 1.5em
-
-.reset_all
-  *
-    padding: 0
-    margin: 0
-    font-size: 100%
-
-ul li.top_border
-  border-top: 1px solid #eeeeee
-
-.font_09
-  font-size: 0.9em
-
-.w_50
-  width: 50%
-  
-hr
-  margin: 5px 0px
-  border-top: 1px dashed #dddddd
+  font-size: $base_font_size
+  line-height: $base_font_size + 3px
 
 .clear
   clear: both  
@@ -121,6 +105,320 @@ th
   .desc
     background-image: url(/images/sort-desc1.png)
     
+.subfilter
+  font-size: $base_font_size
+  font-weight: bold
+  padding: 2px
+  vertical-align: middle
+  float: right
+  *
+    vertical-align: middle
+      
+.controls a
+  font-size: $base_font_size - 1px
+
+.reviews
+  padding-bottom: 16px
+  .review
+    font-size: $base_font_size
+    margin-bottom: 6px
+    border-bottom: 1px solid #ececec
+    border-top: 1px solid #ececec
+    .when
+      float: left
+      width: 14%
+      padding-right: 1%
+      .user
+        font-weight: bold
+      .date
+        font-size: $base_font_size - 1px
+    .message
+      float: left
+      width: 85%
+
+div.content
+  :display block
+  
+.clear
+  :clear both
+
+.tooltip
+  background-color: #FFFFFF
+  border: 2px solid #CCCCCC
+  padding: 2px
+  white-space: nowrap
+
+.googleMarkerTab .address
+  margin-bottom: 0.6em
+
+.tooltip dl, .tooltip dd, .tooltip dt
+  margin: 0px
+  padding: 0px
+
+.tooltip dt 
+  font-weight: bold
+
+.tooltip dd
+  margin-left: 1em
+
+.tooltip img
+  border: 1px solid #AAAAAA
+  display: block
+  
+.tooltip span
+  font-size: $base_font_size - 1px
+  color: #999 
     
-html dl
-  margin-top: 0em
+.date, .time
+  font-size: $base_font_size - 2px
+  
+.callout
+  text-align: center
+  padding: 16px 0
+  font-size: $base_font_size - 3px
+  line-height: $base_font_size + 2px
+  
+.text_block
+  font-family: $base_font
+  padding: 16px 0
+  font-family: $base_font
+  
+.text_block.admin_block
+  padding-bottom: 0  
+  
+#admin_quick_filter
+  padding: 8px 0px
+  
+.errorExplanation
+  display: none  
+  
+.content_spacer
+  height: 24px
+  width: 100%
+  
+.add
+  cursor: pointer  
+  
+.with_space
+  margin-bottom: 24px
+  
+.with_huge_space
+  margin-bottom: 32px 
+
+.no_results
+  width: 100%
+  clear: both
+  padding-top: 30px  
+  text-align: center
+  
+.small_loader
+  display: none
+  width: 16px
+  height: 16px
+  background: url(/images/small_loader.gif) top left
+  position: absolute
+  bottom: 0
+  left: 15px
+
+a.prev, a.next
+  cursor: pointer
+  
+.hidden
+  display: inline  
+  
+.show_me
+  font-size: $base_font_size - 2px
+  border-bottom: 1px dashed $text_color
+  cursor: pointer
+
+.large_padding
+  padding: 35px
+  
+.simple_form div.photo_preview
+  margin: 6px 0
+  width: 150px
+  margin-left: 260px
+  
+.with_space_above
+  margin-top: 18px  
+  
+#admin
+  .text_block  
+    strong, b
+      color: #333
+      
+.relative
+  position: relative
+  
+.min_height
+  min-height: 400px  
+  
+#map_container
+  padding: 3px
+  border: 1px solid #e3e0dc
+
+ul.recent
+  li
+    span
+      display: block
+      font-size: 11px
+      color: $section_link_color
+      line-height: 13px
+      padding-bottom: 2px
+      
+.text_v_center *
+  vertical-align: middle 
+  
+.content_inside table.details
+  width: auto
+  min-width: 300px
+  border: 0 none
+  border-collapse: collapse
+  border-spacing: 2px 2px
+  border: 0 none
+  td.r
+    text-align: right
+    font-weight: bold
+    color: black
+    width: 320px
+  td, th
+    border: 0 none
+    border-bottom: 1px solid #E1E3EC
+    display: table-cell
+    padding: 6px 4px
+  tr:last-child td
+    border-bottom: 0 none
+    
+strong.r
+  color: black
+  font-weight: bold  
+
+html .text_block td.r, .text_block strong.r
+  color: $dd_color
+  font-size: $base_font_size + 1px
+  
+ul.sortable_list
+  li 
+    padding: 4px 6px
+    vertical-align: middle
+    *
+      vertical-align: middle
+
+#buttons_on_home
+  margin-top: 12px
+  text-align: center
+  a
+    margin-left: 12px
+    
+.read_next
+  padding-right: 14px
+  background: url(/images/next_icon2.gif) no-repeat 1px right
+  
+ol.files_list
+  li
+    padding: 6px 0
+    vertical-align: top
+    
+dl.details
+  margin: 0
+  padding: 0
+  dd
+    padding-bottom: 6px
+    border-bottom: 1px solid #efefef
+    margin-bottom: 6px
+    &:last-child
+      border-bottom: 0 none
+      
+table.very_small_text      
+  th
+    font-size: 10px
+    
+.ui-tabs .ui-tabs-nav li a
+  padding: 0.5em 0.65em
+  
+.project_file_description
+  padding-top: 10px
+  padding-bottom: 10px
+  
+.main_project_media
+  margin-bottom: 0px
+  width: 316px
+  height: 250px
+  overflow: hidden
+  
+.project_files_list
+  margin: 0
+  padding: 0
+  list-style-type: none
+  li
+    list-style-type: none
+    margin-bottom: 9px
+    padding-bottom: 9px
+    border-bottom: 1px solid #ececec
+    &:last-child
+      border: 0 none
+  .file_description
+    float: left
+    a
+      display: block
+    span
+      color: #999
+  .file_info
+    .file_type
+      background: transparent url(/images/media-icons/document_index.png) no-repeat top left
+      width: 32px
+      height: 32px
+      margin-right: 12px
+      display: block
+      float: left
+      &.video_ftype
+        background-image: url(/images/media-icons/video.png)
+      &.audio_ftype
+        background-image: url(/images/media-icons/sound.png)
+      &.image_ftype
+        background-image: url(/images/media-icons/picture.png)
+      &.other_ftype
+      
+#show_errors
+  .errorExplanation      
+    display: block
+    
+strong.b
+  font-weight: bold    
+  
+span.by
+  font-size: 11px  
+
+#finra
+  text-align: center
+  margin-top: 0px
+  font-weight: normal
+  font-size: 13px
+  position: absolute
+  top: -20px
+  left: 41%
+  a
+    text-decoration: underline
+    
+.gallery_print
+  list-style-type: none
+  li    
+    list-style-type: none
+    padding-bottom: 12px
+    
+#header.header_print
+  .details
+    left: 143px
+    top: 15px
+  #info_link    
+    display: none
+  .slogan
+    
+.print_layout
+  width: 960px
+  #root #content .container
+    width: 960px
+  .container
+    width: 960px
+    table
+      width: 99%

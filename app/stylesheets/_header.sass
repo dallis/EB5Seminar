@@ -1,0 +1,166 @@
+#header
+  +grid-container
+  height: 120px
+  position: relative
+  color: $light_text_color
+
+  #logo
+    font-size: $base_font_size * 3
+    position: absolute
+    top: 10px
+    left: 0
+    
+  #info_link
+    position: absolute
+    right: 0
+    top: 3px
+  
+  .slogan
+    position: absolute
+    left: 142px
+    top: 48px
+    font-size: $base_font_size + 0px
+    line-height: $base_font_size + 2px
+    font-family: $menu_font
+    color: $light_blue_text_color
+    
+  .details
+    position: absolute
+    top: 5px
+    left: 310px
+    a
+      color: $light_text_color
+
+  ul#home_nav
+    padding: 0
+    margin: 0
+    position: absolute
+    right: 90px
+    top: 5px
+    font-size: $base_font_size
+    list-style-type: none
+    color: $light_text_color
+    li
+      list-style-type: none
+      float: left
+      padding-left: 6px
+      a
+        color: $general_link_color
+        text-decoration: none
+    li.langs
+      padding-left: 75px
+
+  ul#nav
+    padding: 0
+    margin: 0
+    position: absolute
+    left: 0
+    bottom: 0
+    list-style-type: none
+    border-top: 1px solid $border_color
+    border-bottom: 1px solid $border_color
+    width: 100%
+    font-family: $menu_font
+    li
+      list-style-type: none
+      float: left
+      margin-right: 32px
+      padding-top: 8px
+      padding-bottom: 8px
+      &.active a
+        color: $menu_hover_color
+      &.prelast
+        margin-right: 0
+      &.last
+        float: right
+        margin-right: 0px
+      a
+        font-size: 14px
+        color: #333
+        font-family: $menu_font
+        font-weight: bold
+        padding: 0
+        text-transform: uppercase
+        text-decoration: none
+        &:hover, &.selected
+          color: $menu_hover_color
+  #add_this
+    position: absolute
+    right: 0
+    top: 48px
+    
+ul#general_nav
+  margin: 6px 0
+  margin-bottom: 0
+  padding: 3px 0
+  padding-top: 6px
+  color: $light_text_color
+  position: relative
+  z-index: 1000
+  background: #5184d3
+  width: 100%
+  height: 21px
+  +round_top(3px)
+  li
+    font-size: $base_font_size
+    display: block
+    float: left
+    list-style-type: none
+    padding: 4px 0
+    margin: 0
+    margin-left: 6px
+    background: #3a69ad
+    +round_top(3px)
+    a
+      text-decoration: none
+      color: white
+      font-weight: bold
+      padding: 4px 12px
+
+#general_nav li:hover, #general_nav li.selected
+  background-color: #E1E3EC
+  a
+    color: black
+
+#general_nav li:hover ul
+  display: block
+  position: absolute
+  margin: 0
+  padding: 0
+  top: 30px
+  width: 198px
+  background: #E1E3EC
+  +round_bottom(3px)
+  li
+    background: #E1E3EC
+    +round_top(0)
+    a
+      color: black
+      width: 198px
+      height: 25px
+      line-height: 25px
+      text-indent: 0
+      padding: 0 0 0 8px
+      margin: 0
+      display: block
+      text-decoration: none
+      font-size: $base_font_size - 1px
+      font-weight: normal
+      &:hover
+        color: black
+        text-decoration: underline
+
+ul#base_nav        
+  margin: 0
+  padding: 0
+  list-style-type: none
+  position: absolute
+  right: 6px
+  top: 6px
+  color: #ddd
+  li
+    list-style-type: none
+    float: left
+    padding: 2px
+    a
+      text-decoration: none

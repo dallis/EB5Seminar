@@ -1,39 +1,10 @@
-@import "simple_form"
-@import "tables"
+@import "utils"
+@import "colors"
 
 $menu_color: #FFDE01
 $button_color: $menu_color + #333
 
-a
-  color: black
-  &:hover, &:visited
-    color: black
-
-#content
-  position: relative  
-  top: 0
-  
-#footer
-  display: none  
-
-ul#admin_nav
-  float: left
-  margin-left: 0
-  padding-top: 8px
-  padding-bottom: 8px
-  li
-    font-size: 14px
-    float: left
-    list-style-type: none
-    margin: 3px 16px 3px 0px
-    padding: 3px 4px
-    -moz-border-radius: 12px
-    -webkit-border-radius: 12px
-    &:hover, &.selected
-      background: #FFDE01
-      
-.container
-  height: auto      
+$admin_page_bg: #E1E3EC
 
 .container table
   width: 100%
@@ -44,20 +15,129 @@ ul#admin_nav
     background: #ddd
     color: black
     font-weight: bold
-    font-size: 16px
   tr th, tr td
     padding: 3px 4px
-    
-body
+
+.header_container
+  position: relative
+  padding: 0
+  margin: 0
   background: white
+  .header_container_content
+    padding: 0 6px
+    padding-top: 6px
   
-.add
-  font-size: 12px
-  font-weight: bold
-  margin-top: 8px
-  margin-bottom: 8px
-  margin-right: 16px
-  padding: 3px
-  background: $button_color
-  -moz-border-radius: 12px
-  -webkit-border-radius: 12px  
+html h1
+  background: none
+  padding-left: 0
+  margin: 0
+  
+html body
+  background: $admin_page_bg
+  
+html body, html ul
+  font-family: Arial, sans-serif
+  
+body.admin_layout
+  #root, #content, #footer
+    background: $admin_page_bg
+  #root #content .container, #footer ul#footer_nav
+    width: 100%
+    padding: 1%
+    background: $admin_page_bg
+    margin: 0
+  #footer ul#footer_nav
+    margin: 0 auto
+    padding: 0
+  .content_inside
+    background: white
+    padding: 2%
+    min-height: 400px
+    width: 94%
+    +shadow(12px)
+    +round(6px)
+    .simple_form
+      #tabs
+        label
+          width: $l_width + 100px
+        .buttons
+          padding-left: $l_width + 100px
+        .text
+          textarea
+            width: 500px
+
+.current_user_name
+  color: #666
+  
+// styled button inline
+.sbi
+  display: inline
+  background: #3a69ad
+  padding: 6px
+  +round(5px)
+  +shadow(1px)
+  &:hover
+    +shadow(12px)
+  a
+    color: white
+    text-decoration: none    
+    
+#tabs
+  border: 1px solid #e5e5e5
+  padding: 0
+  margin: 0
+  min-height: 500px
+  
+hr.photo_separation
+  border-top: 1px solid #e5e5e5
+  width: 100%
+  margin: 16px 0
+  
+ul.preview_project_gallery
+  list-style-type: none
+  margin: 0
+  padding: 0
+  li
+    list-style-type: none
+    margin: 12px
+    padding: 6px
+    float: left
+    
+div.scroll
+  width: 100%
+  overflow: auto   
+  
+.filter_options
+  width: 500px
+  label, input
+    width: auto
+    float: none  
+
+table.translation
+  width: 2400px
+  overflow: auto
+  border: 0 none
+  &.short_table
+    width: 1750px
+  tr td
+    vertical-align: top
+    width: 880px
+  td.t
+    label
+      display: none
+    div.s
+      clear: both
+  td.c
+    width: 680px
+    input, textarea, select, .imp_editor_box
+      border: 1px solid #E34234
+  td.r
+    width: 680px
+    input, textarea, select, .imp_editor_box
+      border: 1px solid #0247FE
+  td.td_nothing
+    width: 0px
+    display: none
+  .trow
+    height: 31px
+    margin-bottom: 10px

@@ -1,0 +1,26 @@
+/* line 1, ../../app/stylesheets/progress.sass */
+div.progress-container {
+  border: 1px solid #cccccc;
+  width: 100px;
+  margin: 2px 5px 2px 0;
+  padding: 1px;
+  float: left;
+  background: white;
+}
+/* line 8, ../../app/stylesheets/progress.sass */
+div.progress-container.large_progress {
+  width: 360px;
+}
+/* line 10, ../../app/stylesheets/progress.sass */
+div.progress-container.small_progress {
+  width: 180px;
+}
+
+/* line 13, ../../app/stylesheets/progress.sass */
+div.progress-container > div {
+  background-color: #ace97c;
+  height: 16px;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}

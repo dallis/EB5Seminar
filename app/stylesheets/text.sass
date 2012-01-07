@@ -1,4 +1,6 @@
 @import "960/text"
+@import "utils"
+@import "colors"
 
 +text
 
@@ -19,25 +21,36 @@
 
 .text_center
   +text-center
+  
+.center_text  
+  +text-center
+  
+span.noticed_text
+  font-size: $base_font_size
 
 .red_text
   color: red
-  &:hover
+  &:hover, &:visited
     color: red
+
+.notice_color
+  color: $dark_color
+  &:hover, &:visited
+    color: $dark_color
 
 .green_text
   color: green
-  &:hover
+  &:hover, &:visited
     color: green
 
 .yellow_text
   color: yellow
-  &:hover
+  &:hover, &:visited
     color: yellow
 
 .blue_text
   color: blue
-  &:hover
+  &:hover, &:visited
     color: blue
 
 .brown_text
@@ -60,80 +73,71 @@ html
 =small_image_button($name)
   padding-left: unquote("18px")
   padding-left: unquote("18px !important")
-  background: url(/images/icons/#{$name}) no-repeat center left
-  font-size: 12px
+  background: url(/images/fugue/#{$name}) no-repeat center left
+  font-size: $base_font_size
 
-.add_button
-  +small_image_button(unquote("add.png"))
-
-.edit_button
-  +small_image_button(unquote("application_edit.png"))
-
-.show_button
-  +small_image_button(unquote("application_go.png"))
-
-.delete_button
-  +small_image_button(unquote("application_delete.png"))
-
-.list_button
-  +small_image_button(unquote("table.png"))
-
+.remove_user_button
+  +small_image_button(unquote("user--minus.png"))
+  
+.share_user_button
+  +small_image_button(unquote("user-share.png"))  
+  
+.add_company_button
+  +small_image_button(unquote("building--plus.png"))  
+  
 .cancel_button
-  +small_image_button(unquote("table_delete.png"))
-
-.roles_button
-  +small_image_button(unquote("shield_go.png"))
-
-.activate_button
-  +small_image_button(unquote("note_add.png"))
-
-.suspend_button
-  +small_image_button(unquote("note_delete.png"))
-
-.restore_button
-  +small_image_button(unquote("note_go.png"))
-
-.projects_button
-  +small_image_button(unquote("page_white_text.png"))
-
-.archive_button
-  +small_image_button(unquote("package_add.png"))
-
-.check_button
-  +small_image_button(unquote("accept.png"))
-
-.discuss_button
-  +small_image_button(unquote("comment_edit.png"))
-
-.close_button
-  +small_image_button(unquote("drive_go.png"))
-
-.view_buttom
-  +small_image_button(unquote("page_go.png"))
-
-.gallery_button
-  +small_image_button(unquote("image_add.png"))
-
-.change_button
-  +small_image_button(unquote("page_white_wrench.png"))
-
-.dashboard_button
-  +small_image_button(unquote("application_home.png"))
-
-.logout_button
-  +small_image_button(unquote("disconnect.png"))
-
-.resources_button
-  +small_image_button(unquote("table_multiple.png"))
-
-.questions_button
-  +small_image_button(unquote("help.png"))
-
-.translations_button
-  +small_image_button(unquote("table_relationship.png"))
+  +small_image_button(unquote("navigation-180-frame.png"))
+  
+.edit_company_button
+  +small_image_button(unquote("building--pencil.png"))
+  
+.show_company_button
+  +small_image_button(unquote("building--arrow.png"))
+  
+.stat_button  
+  +small_image_button(unquote("building--arrow.png"))
+  
+.delete_company_button
+  +small_image_button(unquote("building--minus.png"))
+  
+.delete_button
+  +small_image_button(unquote("2.0/delete.png"))  
+  
+.edit_button
+  +small_image_button(unquote("notebook--pencil.png"))  
+  
+.show_button
+  +small_image_button(unquote("notebook--arrow.png"))
+  
+.add_button
+  +small_image_button(unquote("2.0/add.png"))
   
 .remove_item_button
-  +small_image_button(unquote("fileclose.png"))  
+  +small_image_button(unquote("fileclose.png"))     
   
+.public_view  
+  +small_image_button(unquote("blue-document--arrow.png"))
+  
+.index_button
+  +small_image_button(unquote("blue-document-list.png"))
+
+.approve_button
+  +small_image_button(unquote("tick-circle.png"))
+  
+.sort_button  
+  +small_image_button(unquote("sort.png"))
+  
+.download_button
+  +small_image_button(unquote("document--arrow.png"))
+
+.map_button
+  +small_image_button(unquote("map.png"))
+  
+.files_button
+  +small_image_button(unquote("folder.png"))
+  
+.share_button  
+  +small_image_button(unquote("user-share.png"))
+
 .bold_text
-  font-weight: bold  
+  font-weight: bold

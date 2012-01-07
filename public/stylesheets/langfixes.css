@@ -1,0 +1,34 @@
+/* line 2, ../../app/stylesheets/langfixes.sass */
+.cn_lang #header ul#nav li {
+  margin-right: 57px;
+}
+/* line 5, ../../app/stylesheets/langfixes.sass */
+.cn_lang #header ul#nav li.last {
+  float: right;
+  margin-right: 0px;
+}
+
+/* line 10, ../../app/stylesheets/langfixes.sass */
+.ru_lang #header ul#nav li a {
+  font-size: 9px;
+}
+/* line 12, ../../app/stylesheets/langfixes.sass */
+.ru_lang #footer ul#footer_nav li a {
+  font-size: 8px;
+}
+/* line 14, ../../app/stylesheets/langfixes.sass */
+.ru_lang #header .slogan {
+  font-size: 12px;
+}
+/* line 16, ../../app/stylesheets/langfixes.sass */
+.ru_lang ul.smaller_object_menu li {
+  padding: 6px 9px;
+}
+/* line 18, ../../app/stylesheets/langfixes.sass */
+.ru_lang ul.smaller_object_menu li a {
+  font-size: 11px;
+}
+/* line 20, ../../app/stylesheets/langfixes.sass */
+.ru_lang #header .details {
+  left: 250px;
+}

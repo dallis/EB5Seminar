@@ -1,0 +1,103 @@
+$l_width: 250px
+
+$border_for_notice: unquote("1px solid #ccc")
+
+$width: 100%
+$margin: 0%
+$max_width: 100%
+$content_width: 960px
+
+$map_border_color: #5f6972
+$base_font_size: 13px
+$base_font: "Helvetica Neue (TT)","Helvetica Neue", "Helvetica", "Arial", sans-serif
+$menu_font: Helvetica, Arial
+$content_paddign_left: 0
+
+=bordered($color: red)
+  border: 1px solid $color
+  
+=alpha-omega
+  +alpha
+  +omega
+  
+=round_me($r)
+  -moz-border-radius: $r
+  -webkit-border-radius: $r
+  border-radius: $r
+
+=round($r)  
+  +round_me($r)
+  
+=round_top($r)
+  border-top-right-radius: $r
+  border-top-left-radius: $r
+  -moz-border-radius-topright: $r
+  -moz-border-radius-topleft: $r
+  -webkit-border-top-right-radius: $r
+  -webkit-border-top-left-radius: $r
+  
+=round_bottom($r)
+  border-bottom-right-radius: $r
+  border-bottom-left-radius: $r
+  -moz-border-radius-bottomright: $r
+  -moz-border-radius-bottomleft: $r
+  -webkit-border-bottom-right-radius: $r
+  -webkit-border-bottom-left-radius: $r
+
+=image_button($w,$h,$image)
+  color: red
+  width: #{$w}px
+  height: #{$h}px
+  display: inline-block
+  text-indent: -9999px
+  background: url("/images/#{$image}") 0px 0px no-repeat
+  color: transparent
+  border-style: none
+  border-width: 0
+  line-height: 0px !important
+  font-size: 0px
+  overflow: hidden
+  vertical-align: middle
+  *padding-left: 1000px
+  &.active
+    background-position: 0px -#{$h}px
+  &.inactive
+    background-position: 0px #{$h}px
+  &:hover
+    background-position: 0px -#{$h}px
+  &.disable:hover
+    background-position: 0px #{$h}px
+    
+=shadow($r)    
+  box-shadow: 0 0 $r #CCC
+  -moz-box-shadow: 0 0 $r #CCC
+  -webkit-box-shadow: 0 0 $r #CCC
+
+a.as_button  
+  background: transparent url(/images/btns_13.png) no-repeat right 0
+  color: #fff
+  display: inline-block
+  height: 43px
+  padding-right: 24px
+  text-decoration: none
+  text-shadow: #4d639c 0 -1px 0
+  overflow: hidden
+  font-size: 14px
+  font-weight: bold
+  line-height: 20px
+  color: white
+  &:visited
+    color: white
+  &:hover
+    background: transparent url(/images/btns_13.png) no-repeat right -42px
+    color: #fff
+    outline: none
+    text-shadow: #666 0 -1px 0
+    span
+      background: transparent url(/images/btns_12.png) no-repeat 0 -42px
+  span
+    background: transparent url(/images/btns_12.png) no-repeat 0 0
+    display: block
+    padding: 13px 0 17px 26px
+  strong
+    text-transform: none
