@@ -5,6 +5,13 @@ EB5Seminar::Application.routes.draw do
 
   resources :speakers
 
+  namespace :admin do
+    match '/', :to => 'dashboard#welcome'
+    resources :speakers
+    resources :sponsors
+    resources :documents
+  end 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

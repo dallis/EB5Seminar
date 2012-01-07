@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @sponsor.name
+%p
+  %b Logo:
+  = image_tag @sponsor.logo.url(:medium)
+%p
+  %b Description:
+  = @sponsor.description
+%p
+  %b Website:
+  = @sponsor.website
+%p
+  %b Email:
+  = @sponsor.email
+%p
+  %b Priority:
+  = @sponsor.priority
+
+= link_to 'Edit', edit_sponsor_path(@sponsor)
+\|
+= link_to 'Back', sponsors_path

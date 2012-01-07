@@ -9,6 +9,9 @@ gem 'mysql2', '~> 0.2.6'
 gem 'haml', '3.0.25'
 gem 'haml-rails'
 gem 'paperclip'
+gem 'inherited_resources', '1.1.2'
+gem "has_scope", '0.5.0'
+gem "responders", '0.6.2'
 
 # Use unicorn as the web server
 # gem 'unicorn'

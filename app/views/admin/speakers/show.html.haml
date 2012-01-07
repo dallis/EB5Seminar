@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @speaker.name
+%p
+  %b Position:
+  = @speaker.position
+%p
+  %b About:
+  = @speaker.about
+%p
+  %b Photo:
+  = image_tag @speaker.photo.url(:medium)
+%p
+  %b Priority:
+  = @speaker.priority
+
+= link_to 'Edit', edit_speaker_path(@speaker)
+\|
+= link_to 'Back', speakers_path
