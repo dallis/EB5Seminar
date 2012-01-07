@@ -1,286 +1,88 @@
-/* line 1, ../../app/stylesheets/_boxes.sass */
-.boxes {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin: 0 auto;
-}
-/* line 9, ../../app/stylesheets/_boxes.sass */
-.boxes .box {
-  float: left;
-  font-weight: bold;
-  padding: 6px 3px;
-}
-/* line 17, ../../app/stylesheets/_boxes.sass */
-.boxes .box.green {
-  background: #d0f29d;
-  border: 1px solid #9cd941;
-}
-/* line 23, ../../app/stylesheets/_boxes.sass */
-.boxes .box.green .title {
-  color: black;
-}
-/* line 27, ../../app/stylesheets/_boxes.sass */
-.boxes .box.yellow {
-  background: #ffffcc;
-  border: 1px solid #ffcc33;
-}
-/* line 33, ../../app/stylesheets/_boxes.sass */
-.boxes .box.yellow .title {
-  color: #664400;
-}
-/* line 37, ../../app/stylesheets/_boxes.sass */
-.boxes .box.blue {
-  background: #dae7fa;
-  border: 1px solid #80c9ff;
-}
-/* line 43, ../../app/stylesheets/_boxes.sass */
-.boxes .box.blue .title {
-  color: black;
-}
+/*
+Syntax error: Invalid variable: "$blue = #4279BC".
+        on line 1 of /root/work/eb5/visaeb5/usadvisors/app/stylesheets/public.sass
 
-/* line 1, ../../app/stylesheets/grid.sass */
-.w30 {
-  width: 30%;
-}
+1: $blue = #4279BC
+2: $light_blue = #4279BC + #222 
+3: $body_color = #333
+4: 
+5: *
+6:   margin: 0
 
-/* line 4, ../../app/stylesheets/grid.sass */
-.w33 {
-  width: 33%;
-}
-
-/* line 7, ../../app/stylesheets/grid.sass */
-.w50 {
-  width: 50%;
-}
-
-/* line 10, ../../app/stylesheets/grid.sass */
-.w25 {
-  width: 25%;
-}
-
-/* line 13, ../../app/stylesheets/grid.sass */
-.ml1 {
-  margin-left: 1%;
-}
-
-/* line 16, ../../app/stylesheets/grid.sass */
-.mr1 {
-  margin-right: 1%;
-}
-
-/* line 19, ../../app/stylesheets/grid.sass */
-.mrl1 {
-  margin: 0 1%;
-}
-
-/* line 22, ../../app/stylesheets/grid.sass */
-.ml2 {
-  margin-left: 2%;
-}
-
-/* line 25, ../../app/stylesheets/grid.sass */
-.mr2 {
-  margin-right: 2%;
-}
-
-/* line 28, ../../app/stylesheets/grid.sass */
-.mrl2 {
-  margin: 0 2%;
-}
-
-/* line 31, ../../app/stylesheets/grid.sass */
-.ml3 {
-  margin-left: 3%;
-}
-
-/* line 34, ../../app/stylesheets/grid.sass */
-.mr3 {
-  margin-right: 3%;
-}
-
-/* line 37, ../../app/stylesheets/grid.sass */
-.mrl3 {
-  margin: 0 3%;
-}
-
-/* line 21, ../../app/stylesheets/public.sass */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 29, ../../app/stylesheets/public.sass */
-body {
-  margin: 0;
-  padding: 0;
-  font: 12px/1.5em 'Lucida Grande', Tahoma, Arial, Verdana, sans-serif;
-  color: #333333;
-}
-
-/* line 41, ../../app/stylesheets/public.sass */
-div.container {
-  width: 800px;
-  margin: 0 auto;
-}
-
-/* line 49, ../../app/stylesheets/public.sass */
-img {
-  border: 0 none;
-}
-
-/* line 55, ../../app/stylesheets/public.sass */
-#header {
-  padding-top: 25px;
-  vertical-align: bottom;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 25px;
-  position: relative;
-}
-/* line 69, ../../app/stylesheets/public.sass */
-#header h1 {
-  position: absolute;
-  left: 0px;
-  top: 20px;
-  font-size: 24px;
-  color: #cc0000;
-  font-weight: bold;
-  vertical-align: bottom;
-  z-index: 9999;
-}
-/* line 87, ../../app/stylesheets/public.sass */
-#header h1 a {
-  color: #cc0000;
-  text-decoration: none;
-}
-/* line 93, ../../app/stylesheets/public.sass */
-#header h2 {
-  position: absolute;
-  left: 80px;
-  top: 25px;
-  font-size: 14px;
-  padding-left: 5px;
-  color: black;
-  font-weight: normal;
-  vertical-align: bottom;
-  padding-top: 13px;
-}
-/* line 113, ../../app/stylesheets/public.sass */
-#header ul#nav {
-  float: right;
-  list-style-type: none;
-}
-/* line 119, ../../app/stylesheets/public.sass */
-#header ul#nav li {
-  float: left;
-}
-/* line 123, ../../app/stylesheets/public.sass */
-#header ul#nav a {
-  color: #333333;
-  padding-left: 6px;
-  padding-right: 4px;
-}
-
-/* line 133, ../../app/stylesheets/public.sass */
-strong {
-  font-weight: normal;
-  font-size: 16px;
-}
-
-/* line 141, ../../app/stylesheets/public.sass */
-.clear {
-  clear: both;
-}
-
-/* line 149, ../../app/stylesheets/public.sass */
-#content > h2 {
-  margin-top: 50px;
-}
-/* line 153, ../../app/stylesheets/public.sass */
-#content h2.callout {
-  font-size: 24px;
-  color: black;
-  text-align: center;
-  line-height: 28px;
-}
-/* line 163, ../../app/stylesheets/public.sass */
-#content h3.callout {
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  line-height: 22px;
-  font-weight: normal;
-}
-/* line 175, ../../app/stylesheets/public.sass */
-#content ol.what {
-  padding-left: 50px;
-  padding-top: 25px;
-  font-size: 18px;
-  margin: 0 auto;
-  width: 450px;
-  line-height: 24px;
-  color: #664400;
-}
-/* line 191, ../../app/stylesheets/public.sass */
-#content ol.what li {
-  padding-bottom: 12px;
-}
-/* line 195, ../../app/stylesheets/public.sass */
-#content ol.what li .title {
-  color: #664400;
-}
-/* line 199, ../../app/stylesheets/public.sass */
-#content ol.what li .about {
-  color: #666666;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-/* line 209, ../../app/stylesheets/public.sass */
-ul.technologies {
-  list-style-type: none;
-  width: 400px;
-  margin: 0 auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-align: center;
-}
-/* line 223, ../../app/stylesheets/public.sass */
-ul.technologies li {
-  display: inline-block;
-  text-align: center;
-  margin-right: 6px;
-  padding: 1px 2px;
-  margin-top: 6px;
-}
-/* line 235, ../../app/stylesheets/public.sass */
-ul.technologies li.red {
-  background: #cc0000;
-  color: white;
-}
-/* line 241, ../../app/stylesheets/public.sass */
-ul.technologies li.yellow {
-  background: #ffffcc;
-  color: black;
-}
-/* line 247, ../../app/stylesheets/public.sass */
-ul.technologies li.green {
-  background: #d0f29d;
-  color: black;
-}
-/* line 253, ../../app/stylesheets/public.sass */
-ul.technologies li.brown {
-  background: #664400;
-  color: white;
-}
-
-/* line 261, ../../app/stylesheets/public.sass */
-.portfolio {
-  padding-top: 25px;
-}
-/* line 265, ../../app/stylesheets/public.sass */
-.portfolio img {
-  float: left;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
+Backtrace:
+/root/work/eb5/visaeb5/usadvisors/app/stylesheets/public.sass:1
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:594:in `parse_variable'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:538:in `parse_line'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:447:in `build_tree'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:466:in `append_children'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:465:in `each'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:465:in `append_children'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:322:in `_to_tree'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:291:in `_render'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:239:in `render'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/util.rb:298:in `silence_sass_warnings'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:239:in `render'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/plugin/compiler.rb:319:in `update_stylesheet'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/plugin/compiler.rb:181:in `update_stylesheets'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/plugin/compiler.rb:175:in `each'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/plugin/compiler.rb:175:in `update_stylesheets'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/plugin/compiler.rb:173:in `each'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/plugin/compiler.rb:173:in `update_stylesheets'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/plugin.rb:81:in `update_stylesheets'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/plugin.rb:54:in `check_for_updates'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/sass-3.1.1/lib/sass/../sass/plugin/rack.rb:51:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.10/lib/hoptoad_notifier/user_informer.rb:12:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/railties-3.0.7/lib/rails/application.rb:77:in `send'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/railties-3.0.7/lib/rails/commands/server.rb:65:in `start'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/railties-3.0.7/lib/rails/commands.rb:30
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/railties-3.0.7/lib/rails/commands.rb:27:in `tap'
+/opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/railties-3.0.7/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid variable: \"$blue = #4279BC\".\A         on line 1 of /root/work/eb5/visaeb5/usadvisors/app/stylesheets/public.sass\A \A 1: $blue = #4279BC\A 2: $light_blue = #4279BC + #222 \A 3: $body_color = #333\A 4: \A 5: *\A 6:   margin: 0"; }

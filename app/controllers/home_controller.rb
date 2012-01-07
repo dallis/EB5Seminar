@@ -21,6 +21,8 @@ class HomeController < ApplicationController
   end
 
   def sitemap
+    headers["Content-Type"] = "text/xml"
+    headers["Last-Modified"] = Time.now.utc.strftime("%Y-%m-%dT%H:%M:%S+00:00")
   end
 
 end
