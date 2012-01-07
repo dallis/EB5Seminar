@@ -1,0 +1,16 @@
+= title @page.identifier
+
+%h1.left Page: #{@page.identifier}
+.right
+  = link_to 'Edit', [:edit, :admin, @page], :class => 'edit_button'
+  = link_to 'Back to Pages list', [:admin, :pages], :class => 'index_button'
+.clear
+
+%h2 Content
+!= @page.content
+
+.clear
+
+.links
+  = link_to 'Edit', [:edit, :admin, @page], :class => 'edit_button'
+  = link_to 'Back to Pages list', [:admin, :pages], :class => 'index_button'

@@ -1,19 +1,45 @@
+!!! XML
+!!!
+
 %html
   %head
-    %title= yield :title
-    = stylesheet_link_tag 'application'
-    = yield :css
+    == <title>#{yield :title}</title>
+    == <meta content="#{yield :description}" name="description" />
+    == <meta content="#{yield :keywords}" name="keywords" />
+    %meta{ 'http-equiv' => 'imagetoolbar', :content => 'no' }
+    %meta{ :name => 'distribution', :content => 'global' }
+    - if (yield :noindex).blank?
+      %meta{ :name => 'robots', :content => 'all' }
+    - else
+      %meta{ :name => 'robots', :content => 'noindex' }
+    %meta{ :name => 'resource-type', :content => 'document' }
+    %meta{ :name => 'MSSmartTagsPreventParsing', :content => 'true' }
+    <meta content="en_US" http-equiv="Content-Language" />
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="audience" content="all" />
+    <meta name="revisit-after" content="7 days" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="image_src" href="/logo.jpg" />
     = csrf_meta_tag
-    = javascript_include_tag 'jquery-1.4.4.min', 'rails.jquery.js'
+    = stylesheet_link_tag 'application', :cache => 'css'
+    = yield :css
+    = javascript_include_tag 'jquery-1.5.1.min', 'jquery.rails', 'application', :cache => 'js'
+    = yield :js
+    = yield :map
+    = yield :markitup
     %script{:type => 'text/javascript', :charset => 'utf-8'}
       $(document).ready(function() {
       = yield :on_ready
       });
-      = yield :js
+      = yield :inline_js
+    - unless defined?(@no_analytics)
+      = include_google_analytics
   %body
     #root
       #content
         .container= raw(flash_messages)
+        .container= render :partial => '/shared/header'
         .container= yield
       #root_footer
     #footer

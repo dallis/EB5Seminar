@@ -3,15 +3,15 @@
 one:
   identifier: MyString
   page_title: MyString
-  content: MyString
+  content: 
   seo_title: MyString
-  seo_description: MyText
+  seo_description: MyString
   seo_keywords: MyString
 
 two:
   identifier: MyString
   page_title: MyString
-  content: MyString
+  content: 
   seo_title: MyString
-  seo_description: MyText
+  seo_description: MyString
   seo_keywords: MyString
