@@ -10,7 +10,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120107133720) do
+ActiveRecord::Schema.define(:version => 20120107135118) do
+
+  create_table "asset_photos", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+  end
+
+  create_table "assets", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
+  end
 
   create_table "documents", :force => true do |t|
     t.string   "title"
@@ -18,6 +36,15 @@ ActiveRecord::Schema.define(:version => 20120107133720) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "page_blocks", :force => true do |t|
+    t.string   "identifier"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "page_blocks", ["identifier"], :name => "index_page_blocks_on_identifier"
 
   create_table "pages", :force => true do |t|
     t.string   "identifier"
@@ -29,6 +56,8 @@ ActiveRecord::Schema.define(:version => 20120107133720) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "pages", ["identifier"], :name => "index_pages_on_identifier"
 
   create_table "speakers", :force => true do |t|
     t.string   "name"

@@ -1,0 +1,10 @@
+= title "Edit: #{@page_block.identifier}"
+
+%h1.left== Edit: #{@page_block.identifier}
+.right
+  = link_to 'Back', [:admin, :page_blocks], :class => 'cancel_button'
+.clear
+
+= render 'form'
+
+.clear

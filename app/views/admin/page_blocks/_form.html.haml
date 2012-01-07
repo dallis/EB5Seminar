@@ -1,0 +1,11 @@
+= add_editor
+= editor("#page_block_content");
+
+= error_messages_for :page_block
+
+= simple_form_for([:admin, @page_block], :html => { :multipart => true }) do |f|
+  = f.input :identifier, :input_html => { :autocomplete => 'off', :readonly => true, :disabled => true }
+  = f.input :content, :label => 'Content', :input_html => { :style => 'width: 90%; height: 600px;' }
+
+  .buttons
+    = f.submit f.object.new_record? ? 'Create' : "Update"

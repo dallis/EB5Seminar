@@ -1,0 +1,14 @@
+= add_editor
+= editor("#page_content");
+
+= error_messages_for :page
+
+= simple_form_for([:admin, @page], :html => { :multipart => true }) do |f|
+  = f.input :page_title, :input_html => { :autocomplete => 'off' }
+  = f.input :seo_title, :input_html => { :autocomplete => 'off' }
+  = f.input :seo_description, :input_html => { :autocomplete => 'off' }
+  = f.input :seo_keywords, :input_html => { :autocomplete => 'off' }
+  = f.input :content, :label => 'Content', :input_html => { :style => 'width: 90%; height: 600px;' }
+
+  .buttons
+    = f.submit f.object.new_record? ? 'Create' : "Update"

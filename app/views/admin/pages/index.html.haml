@@ -1,0 +1,20 @@
+= title "Pages"
+
+%h1.left Pages
+.clear
+
+- if @pages.count > 0
+  %table.zebra
+    %thead
+      %tr
+        %th Name
+        %th Actions
+    %tbody
+      - for page in @pages
+        %tr{ :class => cycle(:odd, :even) }
+          %td= link_to page.identifier, [:admin, page]
+          %td
+            = link_to "edit", [:edit, :admin, page], :class => 'edit_button'
+- else
+  %p
+    Empty.

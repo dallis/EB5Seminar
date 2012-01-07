@@ -1,10 +1,8 @@
 %ul#admin_nav
-  %li= link_to "Home", "#"
-  %li.projects_menu= link_to "Sponsors(#{Sponsor.count})", admin_sponsors_path
-  %li.contacts_menu= link_to "Speakers(#{Speaker.count})", admin_speakers_path
-  %li.contacts_menu= link_to "Documents(#{Document.count})", admin_documents_path
-
+  %li= link_to "Home", '/admin'
+  %li= link_to "Sponsors(#{Sponsor.count})", admin_sponsors_path
+  %li= link_to "Speakers(#{Speaker.count})", admin_speakers_path
+  %li= link_to "Documents(#{Document.count})", admin_documents_path
+  %li= link_to "Pages(#{Page.count})", [:admin, :pages]
+  %li= link_to "Page Blocks(#{PageBlock.count})", [:admin, :page_blocks]
 .clear
-
-- content_for :on_ready do
-  == $('#admin_nav .#{controller_name}_menu').addClass('selected');
