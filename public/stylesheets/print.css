@@ -1,4 +1,8 @@
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 29, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 29, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -7,12 +11,20 @@ body {
   font-size: 10pt;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 52, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 52, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 .container {
   background: none;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 54, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 54, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 hr {
   background: #cccccc;
   color: #cccccc;
@@ -22,40 +34,68 @@ hr {
   padding: 0;
   border: none;
 }
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 62, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 62, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 hr.space {
   background: white;
   color: white;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 65, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 65, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 67, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 67, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 code {
   font-size: 0.9em;
   font-family: "andale mono", "lucida console", monospace;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 72, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 72, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 a img {
   border: none;
 }
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 75, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 75, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 a:link, a:visited {
   background: transparent;
   font-weight: 700;
   text-decoration: underline;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 79, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 79, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 p img.top {
   margin-top: 0;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 81, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 81, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 blockquote {
   margin: 1.5em;
   padding: 1em;
@@ -63,22 +103,38 @@ blockquote {
   font-size: 0.9em;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 86, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 86, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 .small {
   font-size: 0.9em;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 88, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 88, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 .large {
   font-size: 1.1em;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 90, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 90, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 .quiet {
   color: #999999;
 }
 
+<<<<<<< HEAD:public/stylesheets/print.css
 /* line 92, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+=======
+/* line 92, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+>>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/print.css
 .hide {
   display: none;
 }

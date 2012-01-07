@@ -67,5 +67,13 @@ EB5Seminar::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
   root :to => "home#index"
-end
 
+  match '/agenda', :to => "home#agenda"
+  match '/speakers', :to => "home#speakers"
+  match '/venue', :to => "home#venue"
+  match '/sponsors', :to => "home#sponsors"
+  match '/resources', :to => "home#resources"
+  match '/contact', :to => "home#contact"
+
+  match "/sitemap.xml", :controller => "home", :action => "sitemap", :format => 'xml'
+end
