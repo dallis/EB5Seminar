@@ -1,0 +1,29 @@
+%h1 Listing sponsors
+
+%table
+  %tr
+    %th Name
+    %th Logo
+    %th Description
+    %th Website
+    %th Email
+    %th Priority
+    %th
+    %th
+    %th
+
+  - @sponsors.each do |sponsor|
+    %tr
+      %td= sponsor.name
+      %td= sponsor.logo
+      %td= sponsor.description
+      %td= sponsor.website
+      %td= sponsor.email
+      %td= sponsor.priority
+      %td= link_to 'Show', sponsor
+      %td= link_to 'Edit', edit_sponsor_path(sponsor)
+      %td= link_to 'Destroy', sponsor, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Sponsor', new_sponsor_path

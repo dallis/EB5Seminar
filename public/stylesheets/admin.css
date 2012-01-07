@@ -1,0 +1,216 @@
+/* line 3, ../../app/stylesheets/_simple_form.sass */
+.simple_form label {
+  margin: 2px 0;
+  display: block;
+  color: #333333;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+/* line 19, ../../app/stylesheets/_simple_form.sass */
+.simple_form div.input {
+  margin-bottom: 10px;
+}
+/* line 27, ../../app/stylesheets/_simple_form.sass */
+.simple_form div.boolean label, .simple_form div.boolean input {
+  vertical-align: middle;
+}
+/* line 33, ../../app/stylesheets/_simple_form.sass */
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  margin: 0;
+  display: inline;
+}
+/* line 41, ../../app/stylesheets/_simple_form.sass */
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+/* line 49, ../../app/stylesheets/_simple_form.sass */
+.simple_form .error {
+  font-size: 11px;
+  color: #dd0000;
+  display: block;
+}
+/* line 59, ../../app/stylesheets/_simple_form.sass */
+.simple_form .hint {
+  font-size: 11px;
+  color: #555555;
+  display: block;
+  font-style: italic;
+}
+/* line 71, ../../app/stylesheets/_simple_form.sass */
+.simple_form input.text, .simple_form input.string, .simple_form input.password, .simple_form textarea, .simple_form select {
+  background: white;
+  border: 1px solid #dddddd;
+  padding: 3px 4px;
+  font-size: 12px;
+  line-height: 14px;
+}
+/* line 83, ../../app/stylesheets/_simple_form.sass */
+.simple_form input.text:hover, .simple_form input.text:focus, .simple_form input.string:hover, .simple_form input.string:focus, .simple_form input.password:hover, .simple_form input.password:focus, .simple_form textarea:hover, .simple_form textarea:focus, .simple_form select:hover, .simple_form select:focus {
+  border: 1px solid #cccccc;
+}
+/* line 89, ../../app/stylesheets/_simple_form.sass */
+.simple_form input.button {
+  padding: 2px 4px;
+}
+/* line 95, ../../app/stylesheets/_simple_form.sass */
+.simple_form abbr {
+  color: red;
+  text-decoration: none;
+  border-bottom: 0 none;
+}
+
+/* line 3, ../../app/stylesheets/tables.sass */
+table, tr, td, th {
+  border: 1px solid #dddddd;
+}
+
+/* line 6, ../../app/stylesheets/tables.sass */
+table.zebra {
+  vertical-align: baseline;
+  background: transparent;
+  border-collapse: collapse;
+  border: 0 none;
+  margin-bottom: 1.4em;
+  width: 100%;
+  margin: 12px 1px;
+  font-size: 12px;
+}
+/* line 15, ../../app/stylesheets/tables.sass */
+table.zebra th, table.zebra td, table.zebra caption, table.zebra thead {
+  padding: 4px 4px 4px 4px;
+  border: 1px solid #dddddd;
+  border-style: inset;
+}
+/* line 21, ../../app/stylesheets/tables.sass */
+table.zebra thead tr th, table.zebra th tr th {
+  font-weight: bold;
+  border: 1px solid #dddddd;
+  background: #ececec;
+  text-align: left;
+}
+/* line 27, ../../app/stylesheets/tables.sass */
+table.zebra tr.even td {
+  background: #ececec;
+}
+/* line 30, ../../app/stylesheets/tables.sass */
+table.zebra tr.odd td {
+  background: white;
+}
+/* line 32, ../../app/stylesheets/tables.sass */
+table.zebra tfoot {
+  font-style: italic;
+}
+/* line 34, ../../app/stylesheets/tables.sass */
+table.zebra caption {
+  background: #eeeeee;
+}
+/* line 37, ../../app/stylesheets/tables.sass */
+table.zebra td ol {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+/* line 41, ../../app/stylesheets/tables.sass */
+table.zebra tr th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* line 47, ../../app/stylesheets/tables.sass */
+table td.table_block {
+  background: #ececec;
+  color: black;
+  font-weight: bold;
+}
+
+/* line 53, ../../app/stylesheets/tables.sass */
+table.vtop tr td {
+  vertical-align: top;
+}
+
+/* line 13, ../../app/stylesheets/admin.sass */
+a {
+  color: black;
+}
+/* line 17, ../../app/stylesheets/admin.sass */
+a:hover, a:visited {
+  color: black;
+}
+
+/* line 23, ../../app/stylesheets/admin.sass */
+#content {
+  position: relative;
+  top: 0;
+}
+
+/* line 31, ../../app/stylesheets/admin.sass */
+#footer {
+  display: none;
+}
+
+/* line 37, ../../app/stylesheets/admin.sass */
+ul#admin_nav {
+  float: left;
+  margin-left: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* line 47, ../../app/stylesheets/admin.sass */
+ul#admin_nav li {
+  font-size: 14px;
+  float: left;
+  list-style-type: none;
+  margin: 3px 16px 3px 0px;
+  padding: 3px 4px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+}
+/* line 63, ../../app/stylesheets/admin.sass */
+ul#admin_nav li:hover, ul#admin_nav li.selected {
+  background: #ffde01;
+}
+
+/* line 69, ../../app/stylesheets/admin.sass */
+.container {
+  height: auto;
+}
+
+/* line 75, ../../app/stylesheets/admin.sass */
+.container table {
+  width: 100%;
+}
+
+/* line 81, ../../app/stylesheets/admin.sass */
+.container table {
+  border: 2px solid #dddddd;
+}
+/* line 85, ../../app/stylesheets/admin.sass */
+.container table tr th {
+  background: #dddddd;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 95, ../../app/stylesheets/admin.sass */
+.container table tr th, .container table tr td {
+  padding: 3px 4px;
+}
+
+/* line 101, ../../app/stylesheets/admin.sass */
+body {
+  background: white;
+}
+
+/* line 107, ../../app/stylesheets/admin.sass */
+.add {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  padding: 3px;
+  background: #ffff34;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+}

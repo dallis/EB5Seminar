@@ -1,0 +1,27 @@
+%h1 Listing speakers
+
+%table
+  %tr
+    %th Name
+    %th Position
+    %th About
+    %th Photo
+    %th Priority
+    %th
+    %th
+    %th
+
+  - @speakers.each do |speaker|
+    %tr
+      %td= speaker.name
+      %td= speaker.position
+      %td= speaker.about
+      %td= speaker.photo
+      %td= speaker.priority
+      %td= link_to 'Show', speaker
+      %td= link_to 'Edit', edit_speaker_path(speaker)
+      %td= link_to 'Destroy', speaker, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Speaker', new_speaker_path

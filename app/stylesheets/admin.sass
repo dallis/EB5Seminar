@@ -1,0 +1,63 @@
+@import "simple_form"
+@import "tables"
+
+$menu_color: #FFDE01
+$button_color: $menu_color + #333
+
+a
+  color: black
+  &:hover, &:visited
+    color: black
+
+#content
+  position: relative  
+  top: 0
+  
+#footer
+  display: none  
+
+ul#admin_nav
+  float: left
+  margin-left: 0
+  padding-top: 8px
+  padding-bottom: 8px
+  li
+    font-size: 14px
+    float: left
+    list-style-type: none
+    margin: 3px 16px 3px 0px
+    padding: 3px 4px
+    -moz-border-radius: 12px
+    -webkit-border-radius: 12px
+    &:hover, &.selected
+      background: #FFDE01
+      
+.container
+  height: auto      
+
+.container table
+  width: 100%
+  
+.container table
+  border: 2px solid #ddd
+  tr th
+    background: #ddd
+    color: black
+    font-weight: bold
+    font-size: 16px
+  tr th, tr td
+    padding: 3px 4px
+    
+body
+  background: white
+  
+.add
+  font-size: 12px
+  font-weight: bold
+  margin-top: 8px
+  margin-bottom: 8px
+  margin-right: 16px
+  padding: 3px
+  background: $button_color
+  -moz-border-radius: 12px
+  -webkit-border-radius: 12px  

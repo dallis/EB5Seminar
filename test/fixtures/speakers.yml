@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  position: MyString
+  about: MyText
+  photo: MyString
+  priority: 1
+
+two:
+  name: MyString
+  position: MyString
+  about: MyText
+  photo: MyString
+  priority: 1

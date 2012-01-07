@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  identifier: MyString
+  page_title: MyString
+  content: MyString
+  seo_title: MyString
+  seo_description: MyText
+  seo_keywords: MyString
+
+two:
+  identifier: MyString
+  page_title: MyString
+  content: MyString
+  seo_title: MyString
+  seo_description: MyText
+  seo_keywords: MyString

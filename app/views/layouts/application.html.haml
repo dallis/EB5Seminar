@@ -1,0 +1,22 @@
+%html
+  %head
+    %title= yield :title
+    = stylesheet_link_tag 'railsjazz', 'admin', 'footer'
+    = yield :css
+    = csrf_meta_tag
+    = javascript_include_tag 'jquery-1.4.4.min', 'rails.jquery.js'
+    %script{:type => 'text/javascript', :charset => 'utf-8'}
+      $(document).ready(function() {
+      = yield :on_ready
+      });
+      = yield :js
+  %body
+    #root
+      #content
+        .container
+          - flash.each do |name, msg|
+            = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
+        .container= yield
+      #root_footer
+    #footer
+      = render :partial => '/shared/footer'
