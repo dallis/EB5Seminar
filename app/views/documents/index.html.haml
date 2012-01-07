@@ -4,6 +4,7 @@
   %tr
     %th Title
     %th Description
+    %th Attachments
     %th
     %th
     %th
@@ -12,6 +13,7 @@
     %tr
       %td= document.title
       %td= document.description
+      %td= document.attachments.count
       %td= link_to 'Show', document
       %td= link_to 'Edit', edit_document_path(document)
       %td= link_to 'Destroy', document, :confirm => 'Are you sure?', :method => :delete

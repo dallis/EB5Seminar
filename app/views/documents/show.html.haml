@@ -6,6 +6,14 @@
 %p
   %b Description:
   = @document.description
+%p
+  %b Documents:
+  %ul
+  - @document.attachments.each do |a|
+    - if a.title.present?
+      %li= a.title
+    - elsif a.present?
+      %li= a.attachment_file_name
 
 = link_to 'Edit', edit_document_path(@document)
 \|

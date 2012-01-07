@@ -2,7 +2,7 @@ class CreateDocuments < ActiveRecord::Migration
   def self.up
     create_table :documents do |t|
       t.string :title
-      t.text :description
+      t.string :description
 
       t.timestamps
     end
