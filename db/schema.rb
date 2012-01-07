@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120106211050) do
+ActiveRecord::Schema.define(:version => 20120107133720) do
 
   create_table "documents", :force => true do |t|
     t.string   "title"
@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(:version => 20120106211050) do
   create_table "pages", :force => true do |t|
     t.string   "identifier"
     t.string   "page_title"
-    t.string   "content"
+    t.text     "content"
     t.string   "seo_title"
-    t.text     "seo_description"
+    t.string   "seo_description"
     t.string   "seo_keywords"
     t.datetime "created_at"
     t.datetime "updated_at"
