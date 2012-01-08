@@ -34,58 +34,68 @@
   height: 70px;
   padding-top: 10px;
   font: 14px Arial;
+  margin-bottom: 25px;
 }
 
-/* line 41, ../../app/stylesheets/EB5Seminar.sass */
+/* line 43, ../../app/stylesheets/EB5Seminar.sass */
 #flag_container {
-  height: 300px;
+  height: 480px;
   background: url(/images/slices/bg_red_pattern.png) repeat-x;
-  padding-top: 25px;
 }
 
 /* line 49, ../../app/stylesheets/EB5Seminar.sass */
-.flag {
-  height: 250px;
-  width: 960px;
-  background: url(/images/slices/flag_01.jpg) repeat-x;
-  padding-top: 20px;
+.flag_shadow {
+  height: 480px;
+  background: url(/images/slices/bg_red_shadow.jpg);
 }
 
-/* line 59, ../../app/stylesheets/EB5Seminar.sass */
+/* line 55, ../../app/stylesheets/EB5Seminar.sass */
+.flag {
+  position: absolute;
+  top: 150px;
+  height: 400px;
+  width: 960px;
+  background: url(/images/slices/flag_01.jpg) repeat-x;
+  padding-top: 40px;
+}
+
+/* line 69, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text {
-  height: 230px;
+  height: 300px;
+  margin-top: 10px;
   background-color: white;
   opacity: 0.9;
   padding-left: 40px;
   padding-right: 40px;
 }
-/* line 71, ../../app/stylesheets/EB5Seminar.sass */
+/* line 83, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_title {
-  padding-top: 20px;
+  padding-top: 30px;
   float: left;
 }
-/* line 77, ../../app/stylesheets/EB5Seminar.sass */
+/* line 89, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_button {
-  padding-top: 20px;
+  padding-top: 30px;
   float: right;
 }
-/* line 83, ../../app/stylesheets/EB5Seminar.sass */
+/* line 95, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_24 {
   font-weight: bold;
   font: 24px Helvetica;
 }
-/* line 89, ../../app/stylesheets/EB5Seminar.sass */
+/* line 101, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_16 {
   font: 16px Helvetica;
   padding: 10px;
-  line-height: 24px;
+  line-height: 26px;
 }
-/* line 97, ../../app/stylesheets/EB5Seminar.sass */
+/* line 109, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_14 {
   font: 14px Arial;
+  line-height: 24px;
 }
 
-/* line 103, ../../app/stylesheets/EB5Seminar.sass */
+/* line 117, ../../app/stylesheets/EB5Seminar.sass */
 #tab1 {
   float: left;
   width: 450px;
@@ -93,7 +103,7 @@
   margin-bottom: 20px;
 }
 
-/* line 113, ../../app/stylesheets/EB5Seminar.sass */
+/* line 127, ../../app/stylesheets/EB5Seminar.sass */
 #tab2 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -101,13 +111,13 @@
   width: 450px;
 }
 
-/* line 123, ../../app/stylesheets/EB5Seminar.sass */
+/* line 137, ../../app/stylesheets/EB5Seminar.sass */
 .tab_title {
   font-weight: bold;
   font: 20px Helvetica;
 }
 
-/* line 129, ../../app/stylesheets/EB5Seminar.sass */
+/* line 143, ../../app/stylesheets/EB5Seminar.sass */
 .tab_text {
   margin-top: 10px;
   font: 14px Arial;

@@ -18,32 +18,26 @@
 	height: 70px
 	padding-top: 10px
 	font: 14px Arial
-	margin-bottom: 25px
 #flag_container
-	height: 480px
-	background: url(/images/slices/bg_red_pattern.png) repeat-x	
-.flag_shadow
-	height: 480px
-	background: url(/images/slices/bg_red_shadow.jpg)	
+	height: 300px
+	background: url(/images/slices/bg_red_pattern.png) repeat-x
+	padding-top: 25px
 .flag
-	position: absolute
-	top: 150px
-	height: 400px
+	height: 250px
 	width: 960px	
 	background: url(/images/slices/flag_01.jpg) repeat-x
-	padding-top: 40px
+	padding-top: 20px
 .flag_text
-	height: 300px
-	margin-top: 10px
+	height: 230px
 	background-color: white
 	opacity: 0.9
 	padding-left: 40px
 	padding-right: 40px	
 	.flag_title
-		padding-top: 30px
+		padding-top: 20px
 		float: left
 	.flag_button
-		padding-top: 30px
+		padding-top: 20px
 		float: right
 	.flag_text_24
 		font-weight: bold
@@ -51,10 +45,9 @@
 	.flag_text_16
 		font: 16px Helvetica
 		padding: 10px
-		line-height: 26px
+		line-height: 24px
 	.flag_text_14
 		font: 14px Arial
-		line-height: 24px
 
 #tab1
 	float: left
