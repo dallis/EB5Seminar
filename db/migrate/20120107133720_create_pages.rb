@@ -14,14 +14,7 @@ class CreatePages < ActiveRecord::Migration
     end
 
     ["Home", "Agenda", "Speakers", "Venue", "Sponsors", "Resources", "Contact Us"].each do |page|
-      p = Page.new
-      p.identifier = page
-      p.page_title = page
-      p.content = page
-      p.seo_title = page
-      p.seo_keywords = page
-      p.seo_description = page
-      p.save
+      Page.create_page(page)
     end
   end
 

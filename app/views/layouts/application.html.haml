@@ -3,9 +3,9 @@
 
 %html
   %head
-    == <title>#{yield :title}</title>
-    == <meta content="#{yield :description}" name="description" />
-    == <meta content="#{yield :keywords}" name="keywords" />
+    == <title>#{(@p || @page).seo_title}</title>
+    == <meta content="#{(@p || @page).seo_description}" name="description" />
+    == <meta content="#{(@p || @page).seo_keywords}" name="keywords" />
     %meta{ 'http-equiv' => 'imagetoolbar', :content => 'no' }
     %meta{ :name => 'distribution', :content => 'global' }
     - if (yield :noindex).blank?
