@@ -53,7 +53,7 @@
 
 /* line 59, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text {
-  height: 200px;
+  height: 230px;
   background-color: white;
   opacity: 0.9;
   padding-left: 40px;
@@ -83,4 +83,33 @@
 /* line 97, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_14 {
   font: 14px Arial;
+}
+
+/* line 103, ../../app/stylesheets/EB5Seminar.sass */
+#tab1 {
+  float: left;
+  width: 450px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 113, ../../app/stylesheets/EB5Seminar.sass */
+#tab2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: right;
+  width: 450px;
+}
+
+/* line 123, ../../app/stylesheets/EB5Seminar.sass */
+.tab_title {
+  font-weight: bold;
+  font: 20px Helvetica;
+}
+
+/* line 129, ../../app/stylesheets/EB5Seminar.sass */
+.tab_text {
+  margin-top: 10px;
+  font: 14px Arial;
+  text-align: left;
 }
