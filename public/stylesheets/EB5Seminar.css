@@ -8,13 +8,21 @@
 /* line 11, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav ul {
   float: right;
+  padding-right: 100px;
 }
-/* line 15, ../../app/stylesheets/EB5Seminar.sass */
+/* line 17, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li {
   margin-top: 16px;
   float: left;
 }
-/* line 21, ../../app/stylesheets/EB5Seminar.sass */
+/* line 23, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li a {
   color: white;
+}
+
+/* line 27, ../../app/stylesheets/EB5Seminar.sass */
+#copyright {
+  float: left;
+  color: white !important;
+  padding-top: 22px;
 }

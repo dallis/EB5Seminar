@@ -2755,9 +2755,9 @@ ul#base_nav li a {
 /* line 1, ../../app/stylesheets/_footer.sass */
 #footer {
   position: relative;
-  background: white;
   color: #959595;
   text-align: right;
+  background: grey;
 }
 /* line 13, ../../app/stylesheets/_footer.sass */
 #footer .footer_nav_container {
@@ -2768,11 +2768,12 @@ ul#base_nav li a {
 /* line 21, ../../app/stylesheets/_footer.sass */
 #footer .footer_nav_container ul#footer_nav {
   float: right;
-  padding: 0;
-  padding-top: 8px;
+  padding-right: 100px;
+  padding-bottom: 0px;
+  padding-top: 12px;
   height: 25px;
 }
-/* line 31, ../../app/stylesheets/_footer.sass */
+/* line 33, ../../app/stylesheets/_footer.sass */
 #footer .footer_nav_container ul#footer_nav li {
   list-style-type: none;
   display: inline;
@@ -2784,9 +2785,9 @@ ul#base_nav li a {
   vertical-align: top;
   padding-bottom: 2px;
 }
-/* line 51, ../../app/stylesheets/_footer.sass */
+/* line 53, ../../app/stylesheets/_footer.sass */
 #footer .footer_nav_container ul#footer_nav li a {
-  color: black;
+  color: white !important;
   font-size: 12px;
   line-height: 13px;
   vertical-align: top;
@@ -2794,7 +2795,7 @@ ul#base_nav li a {
   color: #707070;
   text-transform: uppercase;
 }
-/* line 67, ../../app/stylesheets/_footer.sass */
+/* line 69, ../../app/stylesheets/_footer.sass */
 #footer .footer_nav_container ul#footer_nav li:last-child {
   border-right: 0px none;
 }
@@ -4774,15 +4775,23 @@ div.progress-container > div {
 /* line 11, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav ul {
   float: right;
+  padding-right: 100px;
 }
-/* line 15, ../../app/stylesheets/EB5Seminar.sass */
+/* line 17, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li {
   margin-top: 16px;
   float: left;
 }
-/* line 21, ../../app/stylesheets/EB5Seminar.sass */
+/* line 23, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li a {
   color: white;
+}
+
+/* line 27, ../../app/stylesheets/EB5Seminar.sass */
+#copyright {
+  float: left;
+  color: white !important;
+  padding-top: 22px;
 }
 
 /* line 28, ../../app/stylesheets/application.sass */
