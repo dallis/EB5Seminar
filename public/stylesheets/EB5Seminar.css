@@ -130,6 +130,7 @@
 
 /* line 157, ../../app/stylesheets/EB5Seminar.sass */
 .tab_text {
+  line-height: 20px;
   margin-top: 10px;
   font: 14px "Arial Regular";
   text-align: left;
