@@ -1,0 +1,20 @@
+/* line 1, ../../app/stylesheets/EB5Seminar.sass */
+#home_nav {
+  background: url(/images/slices/bg_top_pattern.png) repeat-x;
+  font-size: 14px;
+  height: 48px;
+  width: 100%;
+}
+/* line 11, ../../app/stylesheets/EB5Seminar.sass */
+#home_nav ul {
+  float: right;
+}
+/* line 15, ../../app/stylesheets/EB5Seminar.sass */
+#home_nav li {
+  margin-top: 16px;
+  float: left;
+}
+/* line 21, ../../app/stylesheets/EB5Seminar.sass */
+#home_nav li a {
+  color: white;
+}
