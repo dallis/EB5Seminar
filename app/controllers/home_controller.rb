@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  before_filter :load_page, :except => :sitemap
+
   def index
   end
 
