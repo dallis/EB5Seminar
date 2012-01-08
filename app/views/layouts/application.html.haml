@@ -39,7 +39,7 @@
     #root
       #content
         .container= raw(flash_messages)
-        .container= render :partial => '/shared/header'
+        = render :partial => '/shared/header'
         .container= yield
       #root_footer
     #footer

@@ -1,28 +1,86 @@
 /* line 1, ../../app/stylesheets/EB5Seminar.sass */
-#home_nav {
+#header {
   background: url(/images/slices/bg_top_pattern.png) repeat-x;
+}
+
+/* line 5, ../../app/stylesheets/EB5Seminar.sass */
+#home_nav {
   font-size: 14px;
   height: 48px;
-  width: 100%;
 }
 /* line 11, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav ul {
   float: right;
-  padding-right: 100px;
 }
-/* line 17, ../../app/stylesheets/EB5Seminar.sass */
+/* line 15, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li {
   margin-top: 16px;
   float: left;
 }
-/* line 23, ../../app/stylesheets/EB5Seminar.sass */
+/* line 21, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li a {
-  color: white;
+  color: #959595;
 }
 
-/* line 27, ../../app/stylesheets/EB5Seminar.sass */
+/* line 25, ../../app/stylesheets/EB5Seminar.sass */
 #copyright {
   float: left;
-  color: white !important;
+  color: #959595;
   padding-top: 22px;
+}
+
+/* line 33, ../../app/stylesheets/EB5Seminar.sass */
+#logo {
+  height: 70px;
+  padding-top: 10px;
+  font: 14px Arial;
+}
+
+/* line 41, ../../app/stylesheets/EB5Seminar.sass */
+#flag_container {
+  height: 300px;
+  background: url(/images/slices/bg_red_pattern.png) repeat-x;
+  padding-top: 25px;
+}
+
+/* line 49, ../../app/stylesheets/EB5Seminar.sass */
+.flag {
+  height: 250px;
+  width: 960px;
+  background: url(/images/slices/flag_01.jpg) repeat-x;
+  padding-top: 20px;
+}
+
+/* line 59, ../../app/stylesheets/EB5Seminar.sass */
+.flag_text {
+  height: 200px;
+  background-color: white;
+  opacity: 0.9;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* line 71, ../../app/stylesheets/EB5Seminar.sass */
+.flag_text .flag_title {
+  padding-top: 20px;
+  float: left;
+}
+/* line 77, ../../app/stylesheets/EB5Seminar.sass */
+.flag_text .flag_button {
+  padding-top: 20px;
+  float: right;
+}
+/* line 83, ../../app/stylesheets/EB5Seminar.sass */
+.flag_text .flag_text_24 {
+  font-weight: bold;
+  font: 24px Helvetica;
+}
+/* line 89, ../../app/stylesheets/EB5Seminar.sass */
+.flag_text .flag_text_16 {
+  font: 16px Helvetica;
+  padding: 10px;
+  line-height: 24px;
+}
+/* line 97, ../../app/stylesheets/EB5Seminar.sass */
+.flag_text .flag_text_14 {
+  font: 14px Arial;
 }

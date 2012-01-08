@@ -1,5 +1,5 @@
 #header  
-  #home_nav
+  #home_nav.container
     %ul
       %li= link_to 'Home', '/'
       %li= link_to 'Agenda', '/agenda'
@@ -8,3 +8,25 @@
       %li= link_to 'Sponsors', '/sponsors'
       %li= link_to 'Resources', '/resources'
       %li= link_to 'Contact Us', '/contact'
+
+#logo.container
+  = image_tag "slices/logo.png"
+  .clear
+  Come hear the top experts in the immigration profession speak about the EB5 program
+#flag_container
+  .flag.container
+    .flag_text
+      .flag_title
+        .flag_text_24
+          Seminar Overview
+        .flag_text_16
+          Dates: October
+          %br
+          Where: New-York
+          %br
+          Cost: 800$
+      .flag_button
+        = link_to image_tag("slices/btn_testimonial.png"), '/testimonials'
+      .clear
+      .flag_text_14
+        This seminar is to educate foreign nationals, immigration attorneys and professionals who assist their clients in using the EB-5 visa to establish U.S. permanent residency, as well as public and private entities who are considering using foreign investment as a source of funding to finance commercial and public enterprises.
