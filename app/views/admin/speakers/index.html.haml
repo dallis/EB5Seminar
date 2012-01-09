@@ -15,7 +15,7 @@
     %tr
       %td= speaker.name
       %td= speaker.position
-      %td= speaker.about
+      %td= truncate(speaker.about)
       %td= link_to "photo",speaker.photo.url
       %td= speaker.priority
       %td= link_to 'Show', [:admin, speaker]

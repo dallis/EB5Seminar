@@ -1,2 +1,17 @@
-%h1 Home#resources
-%p Find me in app/views/home/resources.html.haml
+#resources
+  #tab1
+    - @documents.each do |document|
+      #resource
+        - if document.has_title_of_attach?
+          %h2= document.title
+          %ul
+            - document.attachments.each do |a|
+              %li
+                = link_to a.title, a.attachment.url
+  #tab2
+    - @documents.each do |document|
+      #resource
+        - if document.has_title_of_attach?
+        - else
+          - document.attachments.each do |a|
+            %h3= link_to document.title, a.attachment.url

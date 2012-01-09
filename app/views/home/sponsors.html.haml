@@ -1,2 +1,13 @@
-%h1 Home#sponsors
-%p Find me in app/views/home/sponsors.html.haml
+#sponsors
+  %h1 PLATINUM SPONSORS
+  .clear
+  - @sponsors.each do |sponsor|
+    #sponsor
+      %h2= sponsor.name
+      .clear
+      = image_tag sponsor.logo(:original)
+      .clear
+      = simple_format(sponsor.description)
+      .clear
+      .website= link_to sponsor.website, "#{sponsor.website}"
+      .clear

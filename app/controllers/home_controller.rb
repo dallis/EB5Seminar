@@ -8,15 +8,18 @@ class HomeController < ApplicationController
   end
 
   def speakers
+    @speakers = Speaker.all
   end
 
   def venue
   end
 
   def sponsors
+    @sponsors = Sponsor.all
   end
 
   def resources
+    @documents = Document.all
   end
 
   def contact

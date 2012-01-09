@@ -1,2 +1,11 @@
-%h1 Home#speakers
-%p Find me in app/views/home/speakers.html.haml
+#speakers
+  %h1 FlORIDA EB-5 FOREIGN INVESTOR SPEAKERS
+  .clear
+  - @speakers.each do |speaker|
+    #speaker
+      .speaker_photo
+        = image_tag speaker.photo(:medium)
+      .speaker_info
+        %h2.speaker_name= speaker.name
+        %h2= speaker.position
+        .speaker_about= simple_format(speaker.about)

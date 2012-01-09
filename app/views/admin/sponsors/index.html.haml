@@ -16,7 +16,7 @@
     %tr
       %td= sponsor.name
       %td= link_to "logo",sponsor.logo.url
-      %td= sponsor.description
+      %td= truncate(sponsor.description)
       %td= sponsor.website
       %td= sponsor.email
       %td= sponsor.priority
