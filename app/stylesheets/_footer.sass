@@ -8,28 +8,31 @@
     margin: 0 auto
     width: 960px
     max-width: 960px
-    ul#footer_nav      
-      float: right
-      padding-bottom: 0px
-      padding-top: 12px
-      height: 25px
-      li
-        list-style-type: none
-        display: inline
-        float: none
-        padding: 0 1px
-        padding-right: 15px
-        margin: 0 3px
-        margin-top: 22px
-        vertical-align: top
-        padding-bottom: 2px
-        a
-          color: #959595 !important
-          font-family: "HelveticaNeueLTStd-Roman"
-          font-size: $base_font_size
-          line-height: $base_font_size
+    #footer_nav
+      ul
+        float: right
+        padding-bottom: 0px
+        padding-top: 12px
+        height: 25px
+        li
+          list-style-type: none
+          display: inline
+          float: none
+          padding: 0 1px
+          padding-right: 15px
+          margin: 0 3px
+          margin-top: 22px
           vertical-align: top
-          text-decoration: none
-          color: $footer_link_color
-        &:last-child
-          border-right: 0px none
+          padding-bottom: 2px
+          &.current
+            a
+              color: white
+          a
+            color: #959595
+            font-family: "HelveticaNeueLTStd-Roman"
+            font-size: $base_font_size
+            line-height: $base_font_size
+            vertical-align: top
+            text-decoration: none
+          &:last-child
+            border-right: 0px none

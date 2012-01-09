@@ -63,4 +63,9 @@ module ApplicationHelper
     (PageBlock.find_or_create_by_identifier(identifier).content || '').html_safe
   end
 
+  def active_link page
+    controller.controller_name == "home" && controller.action_name==page ? 'current' : ''
+  end
+
+
 end
