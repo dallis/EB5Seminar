@@ -75,6 +75,22 @@
   color: black;
   font-family: "HelveticaNeueLTStd-Roman";
 }
+/* line 97, ../../app/stylesheets/EB5Seminar.sass */
+#resources #pdf_message {
+  margin-top: 30px;
+  width: 450px;
+}
+/* line 103, ../../app/stylesheets/EB5Seminar.sass */
+#resources #pdf_message img {
+  float: left;
+}
+/* line 107, ../../app/stylesheets/EB5Seminar.sass */
+#resources #pdf_message .pdf_text {
+  padding-top: 10px;
+  margin-left: 80px;
+  font-size: 12px;
+  font-family: "HelveticaNeueLTStd-Roman";
+}
 
 @font-face {
   font-family: "HelveticaNeueLTStd-Bd";
@@ -86,43 +102,43 @@
   src: url("/fonts/HelveticaNeueLTStd-Roman.otf");
 }
 
-/* line 111, ../../app/stylesheets/EB5Seminar.sass */
+/* line 131, ../../app/stylesheets/EB5Seminar.sass */
 #header {
   background: url(/images/slices/bg_top_pattern.png) repeat-x;
 }
 
-/* line 115, ../../app/stylesheets/EB5Seminar.sass */
+/* line 135, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav {
   font-size: 14px;
   height: 48px;
 }
-/* line 121, ../../app/stylesheets/EB5Seminar.sass */
+/* line 141, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav ul {
   float: right;
 }
-/* line 125, ../../app/stylesheets/EB5Seminar.sass */
+/* line 145, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li {
   margin-top: 16px;
   float: left;
 }
-/* line 131, ../../app/stylesheets/EB5Seminar.sass */
+/* line 151, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li a {
   color: #959595;
   font-family: "HelveticaNeueLTStd-Roman";
 }
-/* line 139, ../../app/stylesheets/EB5Seminar.sass */
+/* line 159, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li.current a {
   color: white;
 }
 
-/* line 143, ../../app/stylesheets/EB5Seminar.sass */
+/* line 163, ../../app/stylesheets/EB5Seminar.sass */
 #copyright {
   float: left;
   color: #959595;
   padding-top: 22px;
 }
 
-/* line 151, ../../app/stylesheets/EB5Seminar.sass */
+/* line 171, ../../app/stylesheets/EB5Seminar.sass */
 #logo {
   height: 70px;
   padding-top: 10px;
@@ -130,19 +146,19 @@
   margin-bottom: 25px;
 }
 
-/* line 161, ../../app/stylesheets/EB5Seminar.sass */
+/* line 181, ../../app/stylesheets/EB5Seminar.sass */
 #flag_container {
   height: 480px;
   background: url(/images/slices/bg_red_pattern.png) repeat-x;
 }
 
-/* line 167, ../../app/stylesheets/EB5Seminar.sass */
+/* line 187, ../../app/stylesheets/EB5Seminar.sass */
 .flag_shadow {
   height: 480px;
   background: url(/images/slices/bg_red_shadow.jpg);
 }
 
-/* line 173, ../../app/stylesheets/EB5Seminar.sass */
+/* line 193, ../../app/stylesheets/EB5Seminar.sass */
 .flag {
   position: absolute;
   top: 150px;
@@ -152,7 +168,7 @@
   padding-top: 40px;
 }
 
-/* line 187, ../../app/stylesheets/EB5Seminar.sass */
+/* line 207, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text {
   height: 300px;
   margin-top: 10px;
@@ -161,34 +177,34 @@
   padding-left: 40px;
   padding-right: 40px;
 }
-/* line 201, ../../app/stylesheets/EB5Seminar.sass */
+/* line 221, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_title {
   padding-top: 30px;
   float: left;
 }
-/* line 207, ../../app/stylesheets/EB5Seminar.sass */
+/* line 227, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_button {
   padding-top: 30px;
   float: right;
 }
-/* line 213, ../../app/stylesheets/EB5Seminar.sass */
+/* line 233, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_24 {
   font-weight: bold;
   font: 24px "HelveticaNeueLTStd-Bd";
 }
-/* line 219, ../../app/stylesheets/EB5Seminar.sass */
+/* line 239, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_16 {
   font: 16px "HelveticaNeueLTStd-Roman";
   padding: 10px;
   line-height: 26px;
 }
-/* line 227, ../../app/stylesheets/EB5Seminar.sass */
+/* line 247, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_14 {
   font: 14px "HelveticaNeueLTStd-Roman";
   line-height: 24px;
 }
 
-/* line 235, ../../app/stylesheets/EB5Seminar.sass */
+/* line 255, ../../app/stylesheets/EB5Seminar.sass */
 #tab1 {
   float: left;
   width: 450px;
@@ -196,7 +212,7 @@
   margin-bottom: 20px;
 }
 
-/* line 245, ../../app/stylesheets/EB5Seminar.sass */
+/* line 265, ../../app/stylesheets/EB5Seminar.sass */
 #tab2 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -204,13 +220,13 @@
   width: 450px;
 }
 
-/* line 257, ../../app/stylesheets/EB5Seminar.sass */
+/* line 277, ../../app/stylesheets/EB5Seminar.sass */
 .tab_title {
   font-weight: bold;
   font: 20px "HelveticaNeueLTStd-Bd";
 }
 
-/* line 263, ../../app/stylesheets/EB5Seminar.sass */
+/* line 283, ../../app/stylesheets/EB5Seminar.sass */
 .tab_text {
   line-height: 20px;
   margin-top: 10px;
