@@ -1,5 +1,6 @@
 %p#notice= notice
-
+%p  
+  = image_tag @speaker.photo.url(:medium)
 %p
   %b Name:
   = @speaker.name
@@ -9,9 +10,7 @@
 %p
   %b About:
   = @speaker.about
-%p
-  %b Photo:
-  = image_tag @speaker.photo.url(:medium)
+
 %p
   %b Priority:
   = @speaker.priority

@@ -3,7 +3,6 @@
 %table.zebra
   %tr
     %th Title
-    %th Description
     %th Attachments
     %th
     %th
@@ -12,7 +11,6 @@
   - @documents.each do |document|
     %tr
       %td= document.title
-      %td= document.description
       %td= document.attachments.count
       %td= link_to 'Show', [:admin, document]
       %td= link_to 'Edit', [:edit, :admin, document]

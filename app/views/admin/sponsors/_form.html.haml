@@ -14,13 +14,11 @@
     = f.file_field :logo
   .field
     = f.label :description
-    = f.text_area :description
+    %p
+      = f.text_area :description
   .field
     = f.label :website
     = f.text_field :website
-  .field
-    = f.label :email
-    = f.text_field :email
   .field
     = f.label :priority
     = f.text_field :priority

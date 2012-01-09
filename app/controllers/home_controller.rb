@@ -8,14 +8,14 @@ class HomeController < ApplicationController
   end
 
   def speakers
-    @speakers = Speaker.all
+    @speakers = Speaker.order("priority")
   end
 
   def venue
   end
 
   def sponsors
-    @sponsors = Sponsor.all
+    @sponsors = Sponsor.order("priority")
   end
 
   def resources
