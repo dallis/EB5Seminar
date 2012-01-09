@@ -15,7 +15,7 @@
   - @sponsors.each do |sponsor|
     %tr
       %td= sponsor.name
-      %td= sponsor.logo
+      %td= link_to "logo",sponsor.logo.url
       %td= sponsor.description
       %td= sponsor.website
       %td= sponsor.email
