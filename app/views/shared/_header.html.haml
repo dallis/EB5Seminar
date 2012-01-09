@@ -4,7 +4,7 @@
 #logo.container
   = image_tag "slices/logo.png"
   .clear
-  Come hear the top experts in the immigration profession speak about the EB5 program
+  = pc("HOME header slogan")
 - if controller.controller_name == "home" && controller.action_name=="index"
   = render 'shared/main'
 - else

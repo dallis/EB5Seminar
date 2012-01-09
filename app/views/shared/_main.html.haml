@@ -5,17 +5,15 @@
         .flag_text
           .flag_title
             .flag_text_24
-              Seminar Overview
+              = pc("HOME Seminar Overview title")
             .flag_text_16
-              Dates: October 24-25, 2008
+              Dates: #{pc("HOME Seminar Overview dates")}
               %br
-              Where: Lake Buena Vista Resort Village & Spa, Orlando, FL
+              Where: #{pc("HOME Seminar Overview location")}
               %br
-              Cost: $745.00
+              Cost: #{pc("HOME Seminar Overview price")}
           .flag_button
-            = link_to image_tag("slices/btn_testimonial.png"), '/testimonials'
+            /= link_to image_tag("slices/btn_testimonial.png"), '/testimonials'
           .clear
           .flag_text_14
-            The USCIS EB-5 Program has been crated to allow foreign nationals to invest in commercial enterprises in the United States in exchange for a chance for then and their families to become permanent U.S. residents.
-            %br     
-            To date the EB-5 program has brought in several billion dollars in investment and has resulted in the creation of tens thousands of U.S. jobs.
+            = pc("HOME Seminar Overview content")
