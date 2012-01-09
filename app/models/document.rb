@@ -5,10 +5,8 @@ class Document < ActiveRecord::Base
 
 	def has_title_of_attach?
 		i = 1		
-		if self.attachments.count == 1			
-	    self.attachments.each do |a|
-	    	i = 0 if a.title == ""
-		  end
+		if self.attachments.count == 1	    
+	    	i = 0 if self.attachments.first.title == ""
 	  end
 	  return true if i == 1
 	end
