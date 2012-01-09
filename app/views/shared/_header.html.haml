@@ -2,7 +2,7 @@
   #home_nav.container
     = render 'shared/menu'
 #logo.container
-  = image_tag "slices/logo.png"
+  = link_to image_tag("slices/logo.png"), root_path
   .clear
   = pc("HOME header slogan")
 - if controller.controller_name == "home" && controller.action_name=="index"
