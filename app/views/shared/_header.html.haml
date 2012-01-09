@@ -5,7 +5,7 @@
   = image_tag "slices/logo.png"
   .clear
   Come hear the top experts in the immigration profession speak about the EB5 program
-- if controller.action_name=="index"
+- if controller.controller_name == "home" && controller.action_name=="index"
   = render 'shared/main'
 - else
   #flag_container{:style => "height: 48px !important"}
