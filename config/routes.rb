@@ -1,4 +1,7 @@
-EB5Seminar::Application.routes.draw do
+EB5Seminar::Application.routes.draw do  
+
+  
+
   namespace :admin do
     match '/', :to => 'dashboard#welcome'
     resources :speakers
@@ -6,6 +9,9 @@ EB5Seminar::Application.routes.draw do
     resources :documents
     resources :pages
     resources :page_blocks
+    resources :cities
+    resources :practice_areas
+    resources :languages
   end 
 
   namespace :dashboard do

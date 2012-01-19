@@ -1,0 +1,14 @@
+%h1 Listing Languages
+%table.zebra
+  %tr
+    %th Name
+
+  - @languages.each do |language|
+    %tr
+      %td= language.name
+      %td= link_to 'Edit', [:edit, :admin, language]
+      %td= link_to 'Destroy', [:admin, language], :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Language', [:new, :admin, :language]

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: 
+  country: MyString
+  in_us: false
+
+two:
+  name: 
+  country: MyString
+  in_us: false

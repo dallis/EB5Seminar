@@ -22,5 +22,26 @@
   .field
     = f.label :priority
     = f.text_field :priority
+  .field
+    = f.label :moderator
+    = f.check_box :moderator
+  .field
+    %br
+    %p 
+      Languages:
+    = hidden_field_tag("speaker[language_ids][]", "", :id => nil)
+    - Language.all.each do |language|
+      = check_box_tag "speaker[language_ids][]", language.id, @speaker.languages.include?(language)
+      = language.name
+  .field
+    %br
+    %p 
+      Practice Areas:
+    = hidden_field_tag("speaker[practice_area_ids][]", "", :id => nil)
+    - PracticeArea.all.each do |practice_area|
+      = check_box_tag "speaker[practice_area_ids][]", practice_area.id, @speaker.practice_areas.include?(practice_area)
+      = practice_area.name
+  .clear
+  %br
   .actions
     = f.submit 'Save'

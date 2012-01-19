@@ -7,9 +7,9 @@
     %th About
     %th Photo
     %th Priority
-    %th
-    %th
-    %th
+    %th Moderator
+    %th Languages
+    %th Practice Areas
 
   - @speakers.each do |speaker|
     %tr
@@ -18,6 +18,9 @@
       %td= truncate(speaker.about)
       %td= link_to "photo",speaker.photo.url
       %td= speaker.priority
+      %td= speaker.moderator == true ? "yes" : "no"
+      %td= speaker.languages.count
+      %td= speaker.practice_areas.count
       %td= link_to 'Show', [:admin, speaker]
       %td= link_to 'Edit', [:edit, :admin, speaker]
       %td= link_to 'Destroy', [:admin, speaker], :confirm => 'Are you sure?', :method => :delete

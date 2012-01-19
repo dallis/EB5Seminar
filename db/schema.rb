@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120107140513) do
+ActiveRecord::Schema.define(:version => 20120119212119) do
 
   create_table "asset_photos", :force => true do |t|
     t.datetime "created_at"
@@ -40,9 +40,38 @@ ActiveRecord::Schema.define(:version => 20120107140513) do
     t.string   "title"
   end
 
+  create_table "cities", :force => true do |t|
+    t.string   "name"
+    t.string   "country"
+    t.boolean  "in_us"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.text     "agenda"
+    t.text     "price"
+  end
+
+  create_table "cities_speakers", :id => false, :force => true do |t|
+    t.integer "city_id"
+    t.integer "speaker_id"
+  end
+
+  create_table "cities_sponsors", :id => false, :force => true do |t|
+    t.integer "city_id"
+    t.integer "sponsor_id"
+  end
+
   create_table "documents", :force => true do |t|
     t.string   "title"
     t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "languages", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -69,6 +98,12 @@ ActiveRecord::Schema.define(:version => 20120107140513) do
 
   add_index "pages", ["identifier"], :name => "index_pages_on_identifier"
 
+  create_table "practice_areas", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "speakers", :force => true do |t|
     t.string   "name"
     t.string   "position"
@@ -79,6 +114,17 @@ ActiveRecord::Schema.define(:version => 20120107140513) do
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
+    t.boolean  "moderator"
+  end
+
+  create_table "speakers_languages", :id => false, :force => true do |t|
+    t.integer "speaker_id"
+    t.integer "language_id"
+  end
+
+  create_table "speakers_practice_areas", :id => false, :force => true do |t|
+    t.integer "speaker_id"
+    t.integer "practice_area_id"
   end
 
   create_table "sponsors", :force => true do |t|

@@ -15,6 +15,22 @@
   %b Priority:
   = @speaker.priority
 
+%p
+  %b Moderator:
+  = @speaker.moderator == true ? "yes" : "no"
+
+%p
+  %b Languages:
+  - @speaker.languages.each do |language|
+    %div
+      = language.name
+
+%p
+  %b Practice Areas:
+  - @speaker.practice_areas.each do |practice_area|
+    %div
+      = practice_area.name
+
 = link_to 'Edit', edit_admin_speaker_path(@speaker)
 \|
 = link_to 'Back', admin_speakers_path

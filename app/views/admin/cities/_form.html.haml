@@ -1,0 +1,56 @@
+= form_for [:admin, @city], :html => {:multipart => true} do |f|
+  -if @city.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@city.errors.count, "error")} prohibited this speaker from being saved:"
+      %ul
+        - @city.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+
+  .field
+    = f.label :country
+    = f.text_field :country
+  
+  .field
+    = f.label :in_us
+    = f.check_box :in_us
+  
+  .field
+    = f.label :photo
+    = f.file_field :photo
+
+  .field
+    = f.label :agenda
+    %p
+      = f.text_area :agenda
+  
+  .field
+    = f.label :price
+    %p
+      = f.text_area :price
+  
+  .field
+    %br
+    %p
+      Speakers:
+    = hidden_field_tag("city[speaker_ids][]", "", :id => nil)
+    - Speaker.all.each do |speaker|
+      %div
+        = check_box_tag "city[speaker_ids][]", speaker.id, @city.speakers.include?(speaker)
+        = speaker.name
+  .field
+    %br
+    %p
+      Sponsors:
+    = hidden_field_tag("city[sponsor_ids][]", "", :id => nil)
+    - Sponsor.all.each do |sponsor|
+      %div
+        = check_box_tag "city[sponsor_ids][]", sponsor.id, @city.sponsors.include?(sponsor)
+        = sponsor.name
+  .clear
+  %br
+  .actions
+    = f.submit 'Save'

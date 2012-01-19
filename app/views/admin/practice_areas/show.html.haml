@@ -1,0 +1,8 @@
+%p#notice= notice
+%p
+  %b Name:
+  = @practice_area.name
+
+= link_to 'Edit', edit_admin_practice_area_path(@practice_area)
+\|
+= link_to 'Back', admin_practice_areas_path

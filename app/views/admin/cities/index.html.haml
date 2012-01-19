@@ -1,0 +1,30 @@
+%h1 Listing Cities
+
+%table.zebra
+  %tr
+    %th Name
+    %th Country
+    %th In US?
+    %th Photo
+    %th Agenda
+    %th Price
+    %th Speakers
+    %th Sponsors
+
+  - @cities.each do |city|
+    %tr
+      %td= city.name
+      %td= city.country
+      %td= city.in_us == true ? "yes" : "no"
+      %td= link_to "photo",city.photo.url
+      %td= truncate(city.agenda)
+      %td= truncate(city.price)
+      %td= city.speakers.count
+      %td= city.sponsors.count
+      %td= link_to 'Show', [:admin, city]
+      %td= link_to 'Edit', [:edit, :admin, city]
+      %td= link_to 'Destroy', [:admin, city], :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New City', [:new, :admin, :city]
