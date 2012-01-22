@@ -88,3 +88,5 @@ usadvisors/db/sphinx/*
 usadvisors/log/development.log
 usadvisors/log/passenger.3000.log
 usadvisors/config/amazon_s3.yml
+public/system/*
+public/system
