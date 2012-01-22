@@ -9,5 +9,5 @@
       .clear
       = simple_format(sponsor.description)
       .clear
-      .website= link_to sponsor.website, "#{sponsor.website}"
+      .website= link_to sponsor.website, "#{sponsor.website}", :rel => 'nofollow'
       .clear

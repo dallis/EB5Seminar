@@ -1,26 +1,12 @@
-= form_for [:admin, @sponsor], :html => {:multipart => true} do |f|
-  -if @sponsor.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@sponsor.errors.count, "error")} prohibited this sponsor from being saved:"
-      %ul
-        - @sponsor.errors.full_messages.each do |msg|
-          %li= msg
+= add_editor
+= editor("#sponsor_description");
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :logo
-    = f.file_field :logo
-  .field
-    = f.label :description
-    %p
-      = f.text_area :description
-  .field
-    = f.label :website
-    = f.text_field :website
-  .field
-    = f.label :priority
-    = f.text_field :priority
-  .actions
-    = f.submit 'Save'
+= simple_form_for [:admin, @sponsor], :html => {:multipart => true} do |f|
+  - if @sponsor.errors.any?
+    = f.error_messages
+  = f.input :name
+  = f.input :logo
+  = f.input :description
+  = f.input :website
+  = f.input :priority
+  = f.button :submit

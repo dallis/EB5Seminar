@@ -1,14 +1,5 @@
-= form_for [:admin, @practice_area] do |f|
-  -if @practice_area.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@practice_area.errors.count, "error")} prohibited this practice_area from being saved:"
-      %ul
-        - @practice_area.errors.full_messages.each do |msg|
-          %li= msg
-
-  .field
-    = f.label :name
-    = f.text_field :name
-  
-  .actions
-    = f.submit 'Save'
+= simple_form_for [:admin, @practice_area] do |f|
+  - if @practice_area.errors.any?
+    = f.error_messages
+  = f.input :name
+  = f.button :submit

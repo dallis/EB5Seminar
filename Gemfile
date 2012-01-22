@@ -42,5 +42,6 @@ group :development, :test do
 end
 
 gem "simple_form", '1.3.1'
+gem "dynamic_form"
 
 gem "nested_form", :path => "vendor/gems/nested_form-10a77c978c1c" 

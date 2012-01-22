@@ -1,47 +1,15 @@
-= form_for [:admin, @speaker], :html => {:multipart => true} do |f|
-  -if @speaker.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@speaker.errors.count, "error")} prohibited this speaker from being saved:"
-      %ul
-        - @speaker.errors.full_messages.each do |msg|
-          %li= msg
+= add_editor
+= editor("#speaker_about");
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :position
-    = f.text_field :position
-  .field
-    = f.label :about
-    %p
-      = f.text_area :about
-  .field
-    = f.label :photo
-    = f.file_field :photo
-  .field
-    = f.label :priority
-    = f.text_field :priority
-  .field
-    = f.label :moderator
-    = f.check_box :moderator
-  .field
-    %br
-    %p 
-      Languages:
-    = hidden_field_tag("speaker[language_ids][]", "", :id => nil)
-    - Language.all.each do |language|
-      = check_box_tag "speaker[language_ids][]", language.id, @speaker.languages.include?(language)
-      = language.name
-  .field
-    %br
-    %p 
-      Practice Areas:
-    = hidden_field_tag("speaker[practice_area_ids][]", "", :id => nil)
-    - PracticeArea.all.each do |practice_area|
-      = check_box_tag "speaker[practice_area_ids][]", practice_area.id, @speaker.practice_areas.include?(practice_area)
-      = practice_area.name
-  .clear
-  %br
-  .actions
-    = f.submit 'Save'
+= simple_form_for [:admin, @speaker], :html => {:multipart => true} do |f|
+  - if @speaker.errors.any?
+    = f.error_messages
+  = f.input :name
+  = f.input :position
+  = f.input :about
+  = f.input :photo
+  = f.input :priority
+  = f.input :moderator
+  = f.association :languages, :as => :check_boxes
+  = f.association :practice_areas, :as => :check_boxes
+  = f.button :submit

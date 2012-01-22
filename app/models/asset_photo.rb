@@ -8,7 +8,7 @@ class AssetPhoto < ActiveRecord::Base
   validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
     
   def url
-    "http://usadvisors.org" + self.photo.url(:original)
+    "http://intvencap.com/" + self.photo.url(:original)
   end
   
 end

@@ -1,22 +1,11 @@
-= form_for [:admin, (setup_document(@document))], :html => {:multipart => true} do |f|
-  -if @document.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@document.errors.count, "error")} prohibited this document from being saved:"
-      %ul
-        - @document.errors.full_messages.each do |msg|
-          %li= msg
-
-  .field
-    = f.label :title
-    = f.text_field :title
-  %p
-  .field
-    = f.fields_for :attachments do |ff|
-      %div        
-        = ff.text_field :title
-        = ff.file_field :attachment
-        - if ff.object.persisted?
-          = ff.check_box :_destroy
-          = ff.label :_destroy, "Destroy"
-  .actions
-    = f.submit 'Save'
+= simple_form_for [:admin, (setup_document(@document))], :html => {:multipart => true} do |f|
+  - if @document.errors.any?
+    = f.error_messages
+  = f.input :title, :label => "Title of resource"
+  = f.fields_for :attachments do |ff|
+    = ff.input :title, :label => "Name of document"
+    = ff.input :attachment, :label => "Document"
+    - if ff.object.persisted?
+      = ff.check_box :_destroy
+      = ff.label :_destroy, "Destroy"
+  = f.button :submit
