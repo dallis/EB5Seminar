@@ -250,7 +250,8 @@
 /* line 83, ../../app/stylesheets/EB5Seminar.sass */
 #main_menu #search_input {
   margin-top: 6px;
-  width: 160px;
+  margin-right: 3px;
+  width: 154px;
   height: 31px;
   display: inline-block;
   background: url("/images/search.png") 0px 0px no-repeat;
@@ -275,7 +276,11 @@
 #main_menu #search_input.disable:hover {
   background-position: 0px 31px;
 }
-/* line 89, ../../app/stylesheets/EB5Seminar.sass */
+/* line 91, ../../app/stylesheets/EB5Seminar.sass */
+#main_menu #search_input:hover {
+  background-position: 0px 0px !important;
+}
+/* line 95, ../../app/stylesheets/EB5Seminar.sass */
 #main_menu #search_link {
   margin-top: 6px;
   width: 35px;
@@ -304,100 +309,100 @@
   background-position: 0px 31px;
 }
 
-/* line 103, ../../app/stylesheets/EB5Seminar.sass */
+/* line 105, ../../app/stylesheets/EB5Seminar.sass */
 #admin_nav li {
   display: inline;
   list-style-type: none;
   padding-right: 10px;
 }
 
-/* line 115, ../../app/stylesheets/EB5Seminar.sass */
+/* line 117, ../../app/stylesheets/EB5Seminar.sass */
 #speakers h1, #sponsors h1 {
   color: #d10e0c;
   margin: 30px 0px;
   font-family: "HelveticaNeueLTStd-Roman";
 }
-/* line 123, ../../app/stylesheets/EB5Seminar.sass */
+/* line 125, ../../app/stylesheets/EB5Seminar.sass */
 #speakers h2, #sponsors h2 {
   color: #1c4daf;
   margin: 0px;
   font-family: "HelveticaNeueLTStd-Roman";
 }
 
-/* line 133, ../../app/stylesheets/EB5Seminar.sass */
+/* line 135, ../../app/stylesheets/EB5Seminar.sass */
 #sponsors img {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-/* line 139, ../../app/stylesheets/EB5Seminar.sass */
+/* line 141, ../../app/stylesheets/EB5Seminar.sass */
 #sponsors #sponsor {
   margin-bottom: 40px;
 }
-/* line 143, ../../app/stylesheets/EB5Seminar.sass */
+/* line 145, ../../app/stylesheets/EB5Seminar.sass */
 #sponsors .website {
   margin-top: 20px;
 }
-/* line 147, ../../app/stylesheets/EB5Seminar.sass */
+/* line 149, ../../app/stylesheets/EB5Seminar.sass */
 #sponsors .website a {
   color: black;
   font-family: "HelveticaNeueLTStd-Bd";
 }
 
-/* line 155, ../../app/stylesheets/EB5Seminar.sass */
+/* line 157, ../../app/stylesheets/EB5Seminar.sass */
 #speakers #speaker {
   margin-bottom: 40px;
 }
-/* line 159, ../../app/stylesheets/EB5Seminar.sass */
+/* line 161, ../../app/stylesheets/EB5Seminar.sass */
 #speakers #speaker .speaker_photo {
   float: left;
 }
-/* line 163, ../../app/stylesheets/EB5Seminar.sass */
+/* line 165, ../../app/stylesheets/EB5Seminar.sass */
 #speakers #speaker .speaker_info {
   margin-left: 120px;
 }
-/* line 167, ../../app/stylesheets/EB5Seminar.sass */
+/* line 169, ../../app/stylesheets/EB5Seminar.sass */
 #speakers #speaker .speaker_info .speaker_name {
   text-transform: uppercase;
 }
-/* line 171, ../../app/stylesheets/EB5Seminar.sass */
+/* line 173, ../../app/stylesheets/EB5Seminar.sass */
 #speakers #speaker .speaker_info .speaker_about {
   margin-top: 15px;
 }
 
-/* line 179, ../../app/stylesheets/EB5Seminar.sass */
+/* line 181, ../../app/stylesheets/EB5Seminar.sass */
 #resources #tab1, #resources #tab2 {
   margin-top: 30px;
 }
-/* line 183, ../../app/stylesheets/EB5Seminar.sass */
+/* line 185, ../../app/stylesheets/EB5Seminar.sass */
 #resources ul {
   margin-bottom: 30px;
 }
-/* line 187, ../../app/stylesheets/EB5Seminar.sass */
+/* line 189, ../../app/stylesheets/EB5Seminar.sass */
 #resources h2 {
   color: #1c4daf;
   margin-bottom: 10px;
   font-family: "HelveticaNeueLTStd-Roman";
 }
-/* line 197, ../../app/stylesheets/EB5Seminar.sass */
+/* line 199, ../../app/stylesheets/EB5Seminar.sass */
 #resources h3 a {
   color: #1c4daf;
   font-family: "HelveticaNeueLTStd-Roman";
 }
-/* line 203, ../../app/stylesheets/EB5Seminar.sass */
+/* line 205, ../../app/stylesheets/EB5Seminar.sass */
 #resources a {
   color: black;
   font-family: "HelveticaNeueLTStd-Roman";
 }
-/* line 209, ../../app/stylesheets/EB5Seminar.sass */
+/* line 211, ../../app/stylesheets/EB5Seminar.sass */
 #resources #pdf_message {
   margin-top: 30px;
   width: 450px;
 }
-/* line 215, ../../app/stylesheets/EB5Seminar.sass */
+/* line 217, ../../app/stylesheets/EB5Seminar.sass */
 #resources #pdf_message img {
   float: left;
 }
-/* line 219, ../../app/stylesheets/EB5Seminar.sass */
+/* line 221, ../../app/stylesheets/EB5Seminar.sass */
 #resources #pdf_message .pdf_text {
   padding-top: 10px;
   margin-left: 80px;
@@ -415,67 +420,67 @@
   src: url("/fonts/HelveticaNeueLTStd-Roman.otf");
 }
 
-/* line 243, ../../app/stylesheets/EB5Seminar.sass */
+/* line 245, ../../app/stylesheets/EB5Seminar.sass */
 #header {
-  background: url(/images/slices/bg_top_pattern.png) repeat-x;
+  /*background: url(/images/slices/bg_top_pattern.png) repeat-x */
 }
 
-/* line 247, ../../app/stylesheets/EB5Seminar.sass */
+/* line 249, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav {
   font-size: 14px;
   height: 43px;
 }
-/* line 253, ../../app/stylesheets/EB5Seminar.sass */
+/* line 255, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav ul {
   float: right;
 }
-/* line 257, ../../app/stylesheets/EB5Seminar.sass */
+/* line 259, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li {
   margin-top: 16px;
   float: left;
 }
-/* line 263, ../../app/stylesheets/EB5Seminar.sass */
+/* line 265, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li a {
   color: #959595;
   font-family: "HelveticaNeueLTStd-Roman";
 }
-/* line 271, ../../app/stylesheets/EB5Seminar.sass */
+/* line 273, ../../app/stylesheets/EB5Seminar.sass */
 #home_nav li.active a {
   color: white;
 }
 
-/* line 275, ../../app/stylesheets/EB5Seminar.sass */
+/* line 277, ../../app/stylesheets/EB5Seminar.sass */
 #copyright {
   float: right;
   color: #959595;
   padding-top: 23px;
 }
 
-/* line 283, ../../app/stylesheets/EB5Seminar.sass */
+/* line 285, ../../app/stylesheets/EB5Seminar.sass */
 #logo {
   height: 70px;
   padding-top: 10px;
   font: 14px "HelveticaNeueLTStd-Roman";
   margin-bottom: 25px;
 }
-/* line 293, ../../app/stylesheets/EB5Seminar.sass */
+/* line 295, ../../app/stylesheets/EB5Seminar.sass */
 #logo .title {
   font: 33px "HelveticaNeueLTStd-Roman";
 }
 
-/* line 297, ../../app/stylesheets/EB5Seminar.sass */
+/* line 299, ../../app/stylesheets/EB5Seminar.sass */
 #flag_container {
   height: 480px;
   /*background: url(/images/slices/bg_red_pattern.png) repeat-x */
 }
 
-/* line 303, ../../app/stylesheets/EB5Seminar.sass */
+/* line 305, ../../app/stylesheets/EB5Seminar.sass */
 .flag_shadow {
   height: 480px;
   /*background: url(/images/slices/bg_red_shadow.jpg) */
 }
 
-/* line 309, ../../app/stylesheets/EB5Seminar.sass */
+/* line 311, ../../app/stylesheets/EB5Seminar.sass */
 .flag {
   position: absolute;
   top: 150px;
@@ -485,7 +490,7 @@
   padding-top: 40px;
 }
 
-/* line 323, ../../app/stylesheets/EB5Seminar.sass */
+/* line 325, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text {
   height: 300px;
   margin-top: 10px;
@@ -494,34 +499,34 @@
   padding-left: 40px;
   padding-right: 40px;
 }
-/* line 337, ../../app/stylesheets/EB5Seminar.sass */
+/* line 339, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_title {
   padding-top: 30px;
   float: left;
 }
-/* line 343, ../../app/stylesheets/EB5Seminar.sass */
+/* line 345, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_button {
   padding-top: 30px;
   float: right;
 }
-/* line 349, ../../app/stylesheets/EB5Seminar.sass */
+/* line 351, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_24 {
   font-weight: bold;
   font: 24px "HelveticaNeueLTStd-Bd";
 }
-/* line 355, ../../app/stylesheets/EB5Seminar.sass */
+/* line 357, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_16 {
   font: 16px "HelveticaNeueLTStd-Roman";
   padding: 10px;
   line-height: 26px;
 }
-/* line 363, ../../app/stylesheets/EB5Seminar.sass */
+/* line 365, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_14 {
   font: 14px "HelveticaNeueLTStd-Roman";
   line-height: 24px;
 }
 
-/* line 371, ../../app/stylesheets/EB5Seminar.sass */
+/* line 373, ../../app/stylesheets/EB5Seminar.sass */
 #tab1 {
   float: left;
   width: 450px;
@@ -529,7 +534,7 @@
   margin-bottom: 20px;
 }
 
-/* line 381, ../../app/stylesheets/EB5Seminar.sass */
+/* line 383, ../../app/stylesheets/EB5Seminar.sass */
 #tab2 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -537,13 +542,13 @@
   width: 450px;
 }
 
-/* line 393, ../../app/stylesheets/EB5Seminar.sass */
+/* line 395, ../../app/stylesheets/EB5Seminar.sass */
 .tab_title {
   font-weight: bold;
   font: 20px "HelveticaNeueLTStd-Bd";
 }
 
-/* line 399, ../../app/stylesheets/EB5Seminar.sass */
+/* line 401, ../../app/stylesheets/EB5Seminar.sass */
 .tab_text {
   line-height: 20px;
   margin-top: 10px;
