@@ -454,33 +454,34 @@
   float: right;
   color: #959595;
   padding-top: 23px;
+  margin-right: 2em;
 }
 
-/* line 285, ../../app/stylesheets/EB5Seminar.sass */
+/* line 287, ../../app/stylesheets/EB5Seminar.sass */
 #logo {
   height: 70px;
   padding-top: 10px;
   font: 14px "HelveticaNeueLTStd-Roman";
   margin-bottom: 25px;
 }
-/* line 295, ../../app/stylesheets/EB5Seminar.sass */
+/* line 297, ../../app/stylesheets/EB5Seminar.sass */
 #logo .title {
   font: 33px "HelveticaNeueLTStd-Roman";
 }
 
-/* line 299, ../../app/stylesheets/EB5Seminar.sass */
+/* line 301, ../../app/stylesheets/EB5Seminar.sass */
 #flag_container {
   height: 480px;
   /*background: url(/images/slices/bg_red_pattern.png) repeat-x */
 }
 
-/* line 305, ../../app/stylesheets/EB5Seminar.sass */
+/* line 307, ../../app/stylesheets/EB5Seminar.sass */
 .flag_shadow {
   height: 480px;
   /*background: url(/images/slices/bg_red_shadow.jpg) */
 }
 
-/* line 311, ../../app/stylesheets/EB5Seminar.sass */
+/* line 313, ../../app/stylesheets/EB5Seminar.sass */
 .flag {
   position: absolute;
   top: 150px;
@@ -490,7 +491,7 @@
   padding-top: 40px;
 }
 
-/* line 325, ../../app/stylesheets/EB5Seminar.sass */
+/* line 327, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text {
   height: 300px;
   margin-top: 10px;
@@ -499,34 +500,34 @@
   padding-left: 40px;
   padding-right: 40px;
 }
-/* line 339, ../../app/stylesheets/EB5Seminar.sass */
+/* line 341, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_title {
   padding-top: 30px;
   float: left;
 }
-/* line 345, ../../app/stylesheets/EB5Seminar.sass */
+/* line 347, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_button {
   padding-top: 30px;
   float: right;
 }
-/* line 351, ../../app/stylesheets/EB5Seminar.sass */
+/* line 353, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_24 {
   font-weight: bold;
   font: 24px "HelveticaNeueLTStd-Bd";
 }
-/* line 357, ../../app/stylesheets/EB5Seminar.sass */
+/* line 359, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_16 {
   font: 16px "HelveticaNeueLTStd-Roman";
   padding: 10px;
   line-height: 26px;
 }
-/* line 365, ../../app/stylesheets/EB5Seminar.sass */
+/* line 367, ../../app/stylesheets/EB5Seminar.sass */
 .flag_text .flag_text_14 {
   font: 14px "HelveticaNeueLTStd-Roman";
   line-height: 24px;
 }
 
-/* line 373, ../../app/stylesheets/EB5Seminar.sass */
+/* line 375, ../../app/stylesheets/EB5Seminar.sass */
 #tab1 {
   float: left;
   width: 450px;
@@ -534,7 +535,7 @@
   margin-bottom: 20px;
 }
 
-/* line 383, ../../app/stylesheets/EB5Seminar.sass */
+/* line 385, ../../app/stylesheets/EB5Seminar.sass */
 #tab2 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -542,13 +543,13 @@
   width: 450px;
 }
 
-/* line 395, ../../app/stylesheets/EB5Seminar.sass */
+/* line 397, ../../app/stylesheets/EB5Seminar.sass */
 .tab_title {
   font-weight: bold;
   font: 20px "HelveticaNeueLTStd-Bd";
 }
 
-/* line 401, ../../app/stylesheets/EB5Seminar.sass */
+/* line 403, ../../app/stylesheets/EB5Seminar.sass */
 .tab_text {
   line-height: 20px;
   margin-top: 10px;
