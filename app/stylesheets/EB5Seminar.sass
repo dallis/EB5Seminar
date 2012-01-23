@@ -1,152 +1,204 @@
-#admin_nav
-	li
-		display: inline
-		list-style-type: none
-		padding-right: 10px
+=eb_image_button($w,$h,$image)
+  width: #{$w}px
+  height: #{$h}px
+  display: inline-block
+  background: url("/images/#{$image}") 0px 0px no-repeat
+  border-style: none
+  border-width: 0  
+  overflow: hidden
+  float: left
+  &.active
+    background-position: 0px -#{$h}px
+  &.inactive
+    background-position: 0px #{$h}px
+  &:hover
+    background-position: 0px -#{$h}px
+  &.disable:hover
+    background-position: 0px #{$h}px
 
-#speakers, #sponsors	
-	h1
-		color: #D10E0C
-		margin: 30px 0px		
-		font-family: "HelveticaNeueLTStd-Roman"		
-	h2
-		color: #1C4DAF
-		margin: 0px
-		font-family: "HelveticaNeueLTStd-Roman"
+
+#main_menu
+  background: url("/images/menu.png")
+  width: 980px
+  height: 43px
+  #home_link
+    +eb_image_button(61,43,"01_home.png")
+  #about_link
+    +eb_image_button(74,43,"02_about.png")
+  #agenda_link
+    +eb_image_button(88,43,"03_agenda.png")
+  #speakers_link
+    +eb_image_button(98,43,"04_speakers.png")
+  #venue_link
+    +eb_image_button(82,43,"05_venue.png")
+  #sponsors_link
+    +eb_image_button(94,43,"06_sponsors.png")
+  #costs_link
+    +eb_image_button(73,43,"07_costs.png")
+  #resources_link
+    +eb_image_button(101,43,"08_resources.png")
+  #contact_us_link
+    +eb_image_button(107,43,"09_contact.png")
+  #search_input
+    margin-top: 6px
+    +eb_image_button(160,31,"search.png")
+  #search_link
+    margin-top: 6px
+    +eb_image_button(35,31,"btn_go.png")
+  
+
+
+#admin_nav
+  li
+    display: inline
+    list-style-type: none
+    padding-right: 10px
+
+#speakers, #sponsors  
+  h1
+    color: #D10E0C
+    margin: 30px 0px    
+    font-family: "HelveticaNeueLTStd-Roman"   
+  h2
+    color: #1C4DAF
+    margin: 0px
+    font-family: "HelveticaNeueLTStd-Roman"
 #sponsors
-	img
-		margin-bottom: 10px
-		margin-top: 10px
-	#sponsor
-		margin-bottom: 40px
-	.website
-		margin-top: 20px
-		a
-			color: black
-			font-family: "HelveticaNeueLTStd-Bd"
+  img
+    margin-bottom: 10px
+    margin-top: 10px
+  #sponsor
+    margin-bottom: 40px
+  .website
+    margin-top: 20px
+    a
+      color: black
+      font-family: "HelveticaNeueLTStd-Bd"
 #speakers
-	#speaker
-		margin-bottom: 40px
-		.speaker_photo
-			float: left
-		.speaker_info
-			margin-left: 120px
-			.speaker_name
-				text-transform: uppercase
-			.speaker_about
-				margin-top: 15px
+  #speaker
+    margin-bottom: 40px
+    .speaker_photo
+      float: left
+    .speaker_info
+      margin-left: 120px
+      .speaker_name
+        text-transform: uppercase
+      .speaker_about
+        margin-top: 15px
 
 #resources
-	#tab1, #tab2
-		margin-top: 30px
-	ul
-		margin-bottom: 30px
-	h2
-		color: #1C4DAF		
-		margin-bottom: 10px
-		font-family: "HelveticaNeueLTStd-Roman"
-	h3		
-		a
-			color: #1C4DAF
-			font-family: "HelveticaNeueLTStd-Roman"
-	a
-		color: black
-		font-family: "HelveticaNeueLTStd-Roman"
-	#pdf_message
-		margin-top: 30px
-		width: 450px
-		img
-			float: left
-		.pdf_text
-			padding-top: 10px
-			margin-left: 80px
-			font-size: 12px
-			font-family: "HelveticaNeueLTStd-Roman"
-		
+  #tab1, #tab2
+    margin-top: 30px
+  ul
+    margin-bottom: 30px
+  h2
+    color: #1C4DAF    
+    margin-bottom: 10px
+    font-family: "HelveticaNeueLTStd-Roman"
+  h3    
+    a
+      color: #1C4DAF
+      font-family: "HelveticaNeueLTStd-Roman"
+  a
+    color: black
+    font-family: "HelveticaNeueLTStd-Roman"
+  #pdf_message
+    margin-top: 30px
+    width: 450px
+    img
+      float: left
+    .pdf_text
+      padding-top: 10px
+      margin-left: 80px
+      font-size: 12px
+      font-family: "HelveticaNeueLTStd-Roman"
+    
 @font-face
-	font-family: "HelveticaNeueLTStd-Bd"
-	src: url("/fonts/HelveticaNeueLTStd-Bd.otf")
+  font-family: "HelveticaNeueLTStd-Bd"
+  src: url("/fonts/HelveticaNeueLTStd-Bd.otf")
 @font-face
-	font-family: "HelveticaNeueLTStd-Roman"
-	src: url("/fonts/HelveticaNeueLTStd-Roman.otf")
+  font-family: "HelveticaNeueLTStd-Roman"
+  src: url("/fonts/HelveticaNeueLTStd-Roman.otf")
 #header
-	background: url(/images/slices/bg_top_pattern.png) repeat-x	
-#home_nav	
-	font-size: 14px
-	height: 48px	
-	ul		
-		float: right
-	li		
-		margin-top: 16px
-		float: left
-		a
-			color: #959595
-			font-family: "HelveticaNeueLTStd-Roman"
-		&.current
-			a
-				color: white
+  background: url(/images/slices/bg_top_pattern.png) repeat-x 
+#home_nav 
+  font-size: 14px
+  height: 43px  
+  ul    
+    float: right
+  li    
+    margin-top: 16px
+    float: left
+    a
+      color: #959595
+      font-family: "HelveticaNeueLTStd-Roman"
+    &.active
+      a
+        color: white
 #copyright
-	float: left
-	color: #959595
-	padding-top: 22px
+  float: right
+  color: #959595
+  padding-top: 23px
 #logo
-	height: 70px
-	padding-top: 10px
-	font: 14px "HelveticaNeueLTStd-Roman"
-	margin-bottom: 25px
+  height: 70px
+  padding-top: 10px
+  font: 14px "HelveticaNeueLTStd-Roman"
+  margin-bottom: 25px
+  .title
+    font: 33px "HelveticaNeueLTStd-Roman"
 #flag_container
-	height: 480px
-	background: url(/images/slices/bg_red_pattern.png) repeat-x	
+  height: 480px
+  /*background: url(/images/slices/bg_red_pattern.png) repeat-x 
 .flag_shadow
-	height: 480px
-	background: url(/images/slices/bg_red_shadow.jpg)	
+  height: 480px
+  /*background: url(/images/slices/bg_red_shadow.jpg) 
 .flag
-	position: absolute
-	top: 150px
-	height: 400px
-	width: 960px	
-	background: url(/images/slices/flag_01.jpg) repeat-x
-	padding-top: 40px
+  position: absolute
+  top: 150px
+  height: 400px
+  width: 980px  
+  background: url(/images/slices/example.jpg) repeat-x
+  padding-top: 40px
 .flag_text
-	height: 300px
-	margin-top: 10px
-	background-color: white
-	opacity: 0.9
-	padding-left: 40px
-	padding-right: 40px	
-	.flag_title
-		padding-top: 30px
-		float: left		
-	.flag_button
-		padding-top: 30px
-		float: right
-	.flag_text_24
-		font-weight: bold		
-		font: 24px "HelveticaNeueLTStd-Bd"
-	.flag_text_16
-		font: 16px "HelveticaNeueLTStd-Roman"
-		padding: 10px
-		line-height: 26px
-	.flag_text_14
-		font: 14px "HelveticaNeueLTStd-Roman"
-		line-height: 24px
+  height: 300px
+  margin-top: 10px
+  background-color: white
+  opacity: 0.9
+  padding-left: 40px
+  padding-right: 40px 
+  .flag_title
+    padding-top: 30px
+    float: left   
+  .flag_button
+    padding-top: 30px
+    float: right
+  .flag_text_24
+    font-weight: bold   
+    font: 24px "HelveticaNeueLTStd-Bd"
+  .flag_text_16
+    font: 16px "HelveticaNeueLTStd-Roman"
+    padding: 10px
+    line-height: 26px
+  .flag_text_14
+    font: 14px "HelveticaNeueLTStd-Roman"
+    line-height: 24px
 
 #tab1
-	float: left
-	width: 450px
-	margin-top: 20px
-	margin-bottom: 20px
+  float: left
+  width: 450px
+  margin-top: 20px
+  margin-bottom: 20px
 #tab2
-	margin-top: 20px
-	margin-bottom: 20px
-	float: right
-	width: 450px
+  margin-top: 20px
+  margin-bottom: 20px
+  float: right
+  width: 450px
 
 .tab_title
-	font-weight: bold
-	font: 20px "HelveticaNeueLTStd-Bd"
+  font-weight: bold
+  font: 20px "HelveticaNeueLTStd-Bd"
 .tab_text
-	line-height: 20px
-	margin-top: 10px
-	font: 14px "Arial Regular"
-	text-align: left
+  line-height: 20px
+  margin-top: 10px
+  font: 14px "Arial Regular"
+  text-align: left

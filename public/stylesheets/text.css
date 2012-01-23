@@ -39,29 +39,17 @@ a.as_button strong {
   text-transform: none;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 4, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 4, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 body {
   font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 6, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 6, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 a:focus {
   outline: 1px dotted invert;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 8, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 8, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 hr {
   border-color: #cccccc;
   border-style: solid;
@@ -70,92 +58,52 @@ hr {
   height: 0;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 14, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 14, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 h1 {
   font-size: 25px;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 16, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 16, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 h2 {
   font-size: 23px;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 18, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 18, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 h3 {
   font-size: 21px;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 20, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 20, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 h4 {
   font-size: 19px;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 22, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 22, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 h5 {
   font-size: 17px;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 24, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 24, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 h6 {
   font-size: 15px;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 26, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 26, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 ol {
   list-style: decimal;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 28, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 28, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 ul {
   list-style: square;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 30, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 30, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 li {
   margin-left: 30px;
 }
 
-<<<<<<< HEAD:public/stylesheets/text.css
 /* line 32, ../../../../../../usr/local/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
-=======
-/* line 32, ../../../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
->>>>>>> 658762d1d8d2456199cba03d236927e21ff4af60:public/stylesheets/text.css
 p,
 dl,
 hr,

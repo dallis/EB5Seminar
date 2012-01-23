@@ -64,7 +64,7 @@ module ApplicationHelper
   end
 
   def active_link page
-    controller.controller_name == "home" && controller.action_name==page ? 'current' : ''
+    controller.controller_name == "home" && controller.action_name==page ? 'active' : ''
   end
 
 
