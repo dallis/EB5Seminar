@@ -5,6 +5,10 @@ class HomeController < ApplicationController
   end
 
   def agenda
+    begin
+      @city = City.find params[:city_id]
+    rescue
+    end
   end
 
   def speakers

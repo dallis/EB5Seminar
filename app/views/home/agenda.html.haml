@@ -1,3 +1,21 @@
-%h1= @page.page_title
+%h1
+  - if defined? @city
+    #{@city.name} Agenda
+  - else
+    = @page.page_title
 
-= @page.content.html_safe
+.page_sidebar
+  %ul
+    - City.upcoming.each do |city|
+      %li{:class => @city == city ? 'active' : ''}
+        = link_to image_tag(city.photo.url(:medium)), agenda_city_path(:city_id => city)
+        %span.city= link_to city.name, agenda_city_path(:city_id => city)
+        %span.date_range #{city.event_range}
+
+.page_content
+  - if defined? @city
+    = @city.agenda.html_safe
+  - else
+    = @page.content.html_safe
+
+.clear    
