@@ -1,11 +1,50 @@
-#speakers
-  %h1 FlORIDA EB-5 FOREIGN INVESTOR SPEAKERS
-  .clear
-  - @speakers.each do |speaker|
-    #speaker
-      .speaker_photo
-        = image_tag speaker.photo(:medium)
-      .speaker_info
-        %h2.speaker_name= speaker.name
-        %h2= speaker.position
-        .speaker_about= simple_format(speaker.about)
+%h1.title
+  - if defined? @city
+    #{@city.name} Speakers
+  - else
+    = @page.page_title
+
+.page_sidebar
+  %h3 Upcoming Events
+  %ul
+    - City.upcoming.by_date.each do |city|
+      %li{:class => @city == city ? 'active' : ''}
+        = link_to image_tag(city.photo.url(:medium)), speakers_city_path(:city_id => city)
+        %span.city= link_to city.name, speakers_city_path(:city_id => city)
+        %span.date_range #{city.event_range}
+
+  - if City.past.count > 0
+    %br
+    %h3 Past Events
+    %ul
+      - City.past.by_date.each do |city|
+        %li{:class => @city == city ? 'active' : ''}
+          = link_to image_tag(city.photo.url(:medium)), speakers_city_path(:city_id => city)
+          %span.city= link_to city.name, speakers_city_path(:city_id => city)
+          %span.date_range #{city.event_range}
+
+.page_content
+  - if defined? @city
+    #speakers
+      .clear
+      - @city.speakers.each do |speaker|
+        #speaker
+          .speaker_photo
+            = image_tag speaker.photo(:medium)
+          .speaker_info
+            %h2.speaker_name= speaker.name
+            %h2= speaker.position
+            .speaker_about= simple_format(speaker.about)
+  - else
+    #speakers
+      .clear
+      - @speakers.each do |speaker|
+        #speaker
+          .speaker_photo
+            = image_tag speaker.photo(:medium)
+          .speaker_info
+            %h2.speaker_name= speaker.name
+            %h2= speaker.position
+            .speaker_about= simple_format(speaker.about)
+
+.clear    

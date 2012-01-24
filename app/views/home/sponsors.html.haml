@@ -1,13 +1,54 @@
-#sponsors
-  %h1 PLATINUM SPONSORS
-  .clear
-  - @sponsors.each do |sponsor|
-    #sponsor
-      %h2= sponsor.name
+%h1.title
+  - if defined? @city
+    #{@city.name} Sponsors
+  - else
+    = @page.page_title
+
+.page_sidebar
+  %h3 Upcoming Events
+  %ul
+    - City.upcoming.by_date.each do |city|
+      %li{:class => @city == city ? 'active' : ''}
+        = link_to image_tag(city.photo.url(:medium)), sponsors_city_path(:city_id => city)
+        %span.city= link_to city.name, sponsors_city_path(:city_id => city)
+        %span.date_range #{city.event_range}
+
+  - if City.past.count > 0
+    %br
+    %h3 Past Events
+    %ul
+      - City.past.by_date.each do |city|
+        %li{:class => @city == city ? 'active' : ''}
+          = link_to image_tag(city.photo.url(:medium)), sponsors_city_path(:city_id => city)
+          %span.city= link_to city.name, sponsors_city_path(:city_id => city)
+          %span.date_range #{city.event_range}
+
+.page_content
+  - if defined? @city
+    #sponsors      
       .clear
-      = image_tag sponsor.logo(:original)
+      - @city.sponsors.each do |sponsor|
+        #sponsor
+          %h2= sponsor.name
+          .clear
+          = image_tag sponsor.logo(:original)
+          .clear
+          = simple_format(sponsor.description)
+          .clear
+          .website= link_to sponsor.website, "#{sponsor.website}", :rel => 'nofollow'
+          .clear
+  - else
+    #sponsors
       .clear
-      = simple_format(sponsor.description)
-      .clear
-      .website= link_to sponsor.website, "#{sponsor.website}", :rel => 'nofollow'
-      .clear
+      - @sponsors.each do |sponsor|
+        #sponsor
+          %h2= sponsor.name
+          .clear
+          = image_tag sponsor.logo(:original)
+          .clear
+          = simple_format(sponsor.description)
+          .clear
+          .website= link_to sponsor.website, "#{sponsor.website}", :rel => 'nofollow'
+          .clear
+
+.clear
