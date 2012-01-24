@@ -23,6 +23,6 @@ class City < ActiveRecord::Base
   end
 
   def to_param
-    "#{id}-#{self.name}".downcase
+    "#{id}-#{self.name}".downcase.gsub(/[^a-z0-9а-яА-Я]+/i, '-')
   end
 end

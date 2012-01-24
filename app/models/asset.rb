@@ -6,7 +6,7 @@ class Asset < ActiveRecord::Base
   validates_attachment_presence :file
     
   def url
-    "http://usadvisors.org" + self.photo.url(:original)
+    "http://intvencap.com/" + self.photo.url(:original)
   end
 
 end
