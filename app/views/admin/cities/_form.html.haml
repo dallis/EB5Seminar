@@ -13,6 +13,7 @@
   = f.input :photo
   = f.input :agenda  
   = f.input :price
+  = f.input :price_short, :label => 'Short label for price, showed on UI as price'
   = f.association :speakers, :as => :check_boxes
   = f.association :sponsors, :as => :check_boxes
   = f.button :submit
