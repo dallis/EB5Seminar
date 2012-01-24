@@ -2,9 +2,11 @@
 :javascript
   $(document).ready(function() {
     $('#slideshow').cycle({ 
-        fx:      'scrollLeft',
+        fx:      'scrollHorz',
         speed:    1500, 
         timeout:  5000,
+        next:   '#slideshow',
+        pause:   1,
         after:    function() {
             $('#slideshow_caption').html(this.alt);
         }
