@@ -8,9 +8,11 @@ class City < ActiveRecord::Base
   validates_presence_of :name
   validates_presence_of :ends_on
   validates_presence_of :start_on
+  validates_presence_of :price_short
 
   scope :upcoming, where('DATE(cities.ends_on) >= DATE(NOW())')
   scope :past, where('DATE(cities.ends_on) < DATE(NOW())')
+  scope :by_date, order("start_on")
 
   def event_range
     if start_on == ends_on

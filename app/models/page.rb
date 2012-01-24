@@ -6,7 +6,9 @@ class Page < ActiveRecord::Base
     'venue' => 'Venue',
     'sponsors' => 'Sponsors',
     'resources' => 'Resources',
-    'contact' => 'Contact Us'
+    'contact' => 'Contact Us',
+    'costs' => 'Costs',
+    'about' => 'About'
   }
 
   validates_presence_of :identifier

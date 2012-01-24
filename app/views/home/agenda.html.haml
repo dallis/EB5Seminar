@@ -1,16 +1,27 @@
-%h1
+%h1.title
   - if defined? @city
     #{@city.name} Agenda
   - else
     = @page.page_title
 
 .page_sidebar
+  %h3 Upcoming Events
   %ul
-    - City.upcoming.each do |city|
+    - City.upcoming.by_date.each do |city|
       %li{:class => @city == city ? 'active' : ''}
         = link_to image_tag(city.photo.url(:medium)), agenda_city_path(:city_id => city)
         %span.city= link_to city.name, agenda_city_path(:city_id => city)
         %span.date_range #{city.event_range}
+
+  - if City.past.count > 0
+    %br
+    %h3 Past Events
+    %ul
+      - City.past.by_date.each do |city|
+        %li{:class => @city == city ? 'active' : ''}
+          = link_to image_tag(city.photo.url(:medium)), agenda_city_path(:city_id => city)
+          %span.city= link_to city.name, agenda_city_path(:city_id => city)
+          %span.date_range #{city.event_range}
 
 .page_content
   - if defined? @city
