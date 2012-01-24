@@ -4,12 +4,19 @@
     $('#slideshow').cycle({ 
         fx:      'scrollLeft', 
         speed:    5000, 
-        timeout:  5000
+        timeout:  5000,
+        after:    function() {
+            $('#slideshow_caption').html(this.alt);
+        }
     });
   });
-#slideshow
-  - @cities.each do |city|
-    = image_tag city.photo(:big)
+#slideshow_container
+  #slideshow
+    - @cities.each do |city|
+      = image_tag city.photo(:big), :alt => city.name
+  #slideshow_caption
+    = @cities.first.name
+.clear
 .home_title
   = pc('HOME page, left tab title')
 .home_text

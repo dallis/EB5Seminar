@@ -54,6 +54,7 @@
       color: white
       width: 150px
       font-size: 14px
+      padding: 2px 3px
   #search_link
     margin-top: 6px
     +eb_image_button(35,31,"btn_go.png")    
@@ -296,19 +297,37 @@
   float: right
   width: 74%
 
-#slideshow
+#slideshow_container
+  position: relative
   width: 980px
   height: 345px
-  margin-bottom: 15px
-  img
+  #slideshow
     width: 980px
     height: 345px
-    display: none
-    margin: auto
-  img
-    &:first-child
-      display: block
+    margin-bottom: 15px
+    img
+      width: 980px
+      height: 345px
+      display: none
       margin: auto
+    img
+      &:first-child
+        display: block
+        margin: auto
+  #slideshow_caption
+    position: absolute
+    top: 20px
+    z-index: 99
+    bottom: 0px
+    width: 980px
+    height: 30px
+    background: black
+    color: white
+    font: 20px "HelveticaNeueLTStd-Roman"
+    text-transform: uppercase
+    opacity: 0.7
+    text-align: center
+    padding-top: 5px
 
 html h1.title
   color: #D10E0C
