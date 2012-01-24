@@ -40,7 +40,9 @@
       #content
         .container= raw(flash_messages)
         = render :partial => '/shared/header'
-        .container= yield
+        .container
+          = yield
+          .page_spacer
       #root_footer
     #footer
       = render :partial => '/shared/footer'
