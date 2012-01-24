@@ -5232,7 +5232,7 @@ div.progress-container > div {
 
 /* line 287, ../../app/stylesheets/EB5Seminar.sass */
 #logo {
-  height: 70px;
+  height: 55px;
   padding-top: 10px;
   font: 14px "HelveticaNeueLTStd-Roman";
   margin-bottom: 25px;
@@ -5317,17 +5317,111 @@ div.progress-container > div {
 }
 
 /* line 397, ../../app/stylesheets/EB5Seminar.sass */
-.tab_title {
+.home_title {
   font-weight: bold;
   font: 20px "HelveticaNeueLTStd-Bd";
 }
 
 /* line 403, ../../app/stylesheets/EB5Seminar.sass */
-.tab_text {
+.home_text {
   line-height: 20px;
-  margin-top: 10px;
-  font: 14px "Arial Regular";
+  font: 14px "HelveticaNeueLTStd-Roman";
   text-align: left;
+}
+
+/* line 413, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container, .international_container {
+  margin-bottom: 20px;
+  min-height: 130px;
+}
+/* line 419, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container .line, .international_container .line {
+  float: left;
+  border: 0px;
+  height: 1px;
+  background-color: #959595;
+  margin-top: 9px;
+}
+/* line 431, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container .home_title, .international_container .home_title {
+  float: left;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 441, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container #city_container, .international_container #city_container {
+  margin-top: 10px;
+}
+/* line 445, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container #city_container .city, .international_container #city_container .city {
+  font: 14px "HelveticaNeueLTStd-Roman";
+  float: left;
+}
+/* line 451, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container #city_container .city img, .international_container #city_container .city img {
+  float: left;
+  margin-top: 5px;
+}
+
+/* line 461, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container .line {
+  width: 420px;
+  float: right;
+}
+/* line 467, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container .line:first-child {
+  float: left;
+}
+/* line 471, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container img {
+  width: 170px;
+  height: 80px;
+}
+/* line 477, ../../app/stylesheets/EB5Seminar.sass */
+.united_states_container .city {
+  margin-right: 13px;
+  margin-left: 13px;
+}
+
+/* line 487, ../../app/stylesheets/EB5Seminar.sass */
+.international_container .line {
+  width: 415px;
+  float: right;
+}
+/* line 493, ../../app/stylesheets/EB5Seminar.sass */
+.international_container .line:first-child {
+  width: 420px;
+  float: left;
+}
+/* line 499, ../../app/stylesheets/EB5Seminar.sass */
+.international_container img {
+  width: 120px;
+  height: 90px;
+}
+/* line 505, ../../app/stylesheets/EB5Seminar.sass */
+.international_container .city {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* line 515, ../../app/stylesheets/EB5Seminar.sass */
+#slideshow {
+  width: 980px;
+  height: 345px;
+  margin-bottom: 15px;
+}
+/* line 523, ../../app/stylesheets/EB5Seminar.sass */
+#slideshow img {
+  width: 980px;
+  height: 345px;
+  display: none;
+  margin: auto;
+}
+/* line 535, ../../app/stylesheets/EB5Seminar.sass */
+#slideshow img:first-child {
+  display: block;
+  margin: auto;
 }
 
 /* line 28, ../../app/stylesheets/application.sass */

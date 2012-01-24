@@ -142,7 +142,7 @@
   padding-top: 23px
   margin-right: 2em
 #logo
-  height: 70px
+  height: 55px
   padding-top: 10px
   font: 14px "HelveticaNeueLTStd-Roman"
   margin-bottom: 25px
@@ -196,11 +196,77 @@
   float: right
   width: 450px
 
-.tab_title
+.home_title
   font-weight: bold
   font: 20px "HelveticaNeueLTStd-Bd"
-.tab_text
+.home_text
   line-height: 20px
-  margin-top: 10px
-  font: 14px "Arial Regular"
+  font: 14px "HelveticaNeueLTStd-Roman"
   text-align: left
+
+.united_states_container, .international_container
+  margin-bottom: 20px
+  min-height: 130px
+  .line
+    float: left
+    border: 0px
+    height: 1px
+    background-color: #959595
+    margin-top: 9px
+  .home_title
+    float: left
+    font-size: 16px
+    margin-left: 5px
+    margin-right: 5px
+  #city_container
+    margin-top: 10px
+    .city
+      font: 14px "HelveticaNeueLTStd-Roman"
+      float: left
+      img
+        float: left
+        margin-top: 5px
+
+.united_states_container
+  .line      
+    width: 420px
+    float: right
+    &:first-child
+      float: left
+  img
+    width: 170px
+    height: 80px
+  .city
+    margin-right: 13px
+    margin-left: 13px
+
+.international_container
+  .line      
+    width: 415px
+    float: right
+    &:first-child
+      width: 420px
+      float: left
+  img
+    width: 120px
+    height: 90px
+  .city
+    margin-right: 10px
+    margin-left: 10px
+
+
+#slideshow
+  width: 980px
+  height: 345px
+  margin-bottom: 15px
+  img
+    width: 980px
+    height: 345px
+    display: none
+    margin: auto
+  img
+    &:first-child
+      display: block
+      margin: auto
+
+    

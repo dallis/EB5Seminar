@@ -4,8 +4,8 @@
 #logo.container
   .title INTERNATIONAL VENTURE CAPITAL WORKSHOPS
   .clear
-  = pc("HOME header slogan")
+  = #pc("HOME header slogan")
 - if controller.controller_name == "home" && controller.action_name=="index"
-  = render 'shared/main'
+  =# render 'shared/main'
 - else
-  #flag_container{:style => "height: 48px !important"}
+  /*#flag_container{:style => "height: 48px !important"}

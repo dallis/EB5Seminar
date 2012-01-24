@@ -2,6 +2,9 @@ class HomeController < ApplicationController
   before_filter :load_page, :except => :sitemap
 
   def index
+    @cities = City.all
+    @cities_us = City.where(:in_us => true)
+    @cities_in = City.where(:in_us => false)
   end
 
   def agenda
