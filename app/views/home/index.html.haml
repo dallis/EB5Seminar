@@ -1,10 +1,39 @@
-#tab1
-  .tab_title
-    = pc('HOME page, left tab title')
-  .tab_text
-    = pc('HOME page, left tab content')
-#tab2
-  .tab_title
-    = pc('HOME page, right tab title')
-  .tab_text
-    = pc('HOME page, right tab content')
+= javascript_include_tag "jquery.cycle.all.min.js", :cache => 'js'
+:javascript
+  $(document).ready(function() {
+    $('#slideshow').cycle({ 
+        fx:      'scrollLeft', 
+        speed:    5000, 
+        timeout:  5000
+    });
+  });
+#slideshow
+  - @cities.each do |city|
+    = image_tag city.photo(:big)
+.home_title
+  = pc('HOME page, left tab title')
+.home_text
+  = pc('HOME page, left tab content')
+.united_states_container
+  .line
+  .home_title UNITED STATES
+  .line
+  .clear
+  #city_container
+    - @cities_us.each do |city|
+      .city
+        = city.name
+        .clear
+        = image_tag city.photo(:medium)
+.clear
+.international_container
+  .line
+  .home_title INTERNATIONAL
+  .line
+  .clear
+  #city_container
+    - @cities_in.each do |city|
+      .city
+        = city.name
+        .clear
+        = image_tag city.photo(:small)

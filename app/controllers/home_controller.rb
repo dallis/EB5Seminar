@@ -3,6 +3,9 @@ class HomeController < ApplicationController
   before_filter :load_city_if_needed, :only => [:agenda, :costs, :speakers, :sponsors]
 
   def index
+    @cities = City.all
+    @cities_us = City.where(:in_us => true)
+    @cities_in = City.where(:in_us => false)
   end
 
   def agenda
