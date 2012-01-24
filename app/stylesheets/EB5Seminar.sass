@@ -152,7 +152,7 @@
   margin-right: 2em
 
 #logo
-  height: 45px
+  height: 50px
   padding-top: 10px
   font: 14px "HelveticaNeueLTStd-Roman"
   margin-bottom: 25px
@@ -209,11 +209,15 @@
 
 .home_title
   font-weight: bold
-  font: 20px "HelveticaNeueLTStd-Bd"
+  font: 22px #{$base_font}
+  p
+    margin-bottom: 6px
+
 .home_text
   line-height: 20px
-  font: 14px "HelveticaNeueLTStd-Roman"
+  font: 15px  #{$base_font}
   text-align: left
+  padding-bottom: 12px
 
 .united_states_container, .international_container
   margin-bottom: 20px
@@ -232,7 +236,7 @@
   #city_container
     margin-top: 10px
     .city
-      font: 14px "HelveticaNeueLTStd-Roman"
+      font: 14px "HelveticaNeueLTStd-Bd"
       float: left
       img
         float: left
@@ -313,5 +317,9 @@
 html h1.title
   color: #D10E0C
   
-b, strong
+html b, html strong
   font-family: "HelveticaNeueLTStd-Bl", "Helvetica Neue (TT)", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+.page_spacer
+  height: 16px
+  clear: both
