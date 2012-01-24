@@ -25,8 +25,13 @@ EB5Seminar::Application.routes.draw do
   match '/costs/:city_id', :to => "home#costs", :as => :costs_city
 
   match '/speakers', :to => "home#speakers"
+  match '/speakers/:city_id', :to => "home#speakers", :as => :speakers_city
+  
   match '/venue', :to => "home#venue"
+  
   match '/sponsors', :to => "home#sponsors"
+  match '/sponsors/:city_id', :to => "home#sponsors", :as => :sponsors_city
+
   match '/resources', :to => "home#resources"
   match '/contact', :to => "home#contact"
 
