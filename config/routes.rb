@@ -1,7 +1,4 @@
 EB5Seminar::Application.routes.draw do  
-
-  
-
   namespace :admin do
     match '/', :to => 'dashboard#welcome'
     resources :speakers
@@ -22,11 +19,18 @@ EB5Seminar::Application.routes.draw do
   root :to => "home#index"
 
   match '/agenda', :to => "home#agenda"
+  match '/agenda/:city_id', :to => "home#agenda", :as => :agenda_city
+
+  match '/costs', :to => "home#costs"
+  match '/costs/:city_id', :to => "home#costs", :as => :costs_city
+
   match '/speakers', :to => "home#speakers"
   match '/venue', :to => "home#venue"
   match '/sponsors', :to => "home#sponsors"
   match '/resources', :to => "home#resources"
   match '/contact', :to => "home#contact"
+
+  match '/about', :to => "home#about"
 
   match "/sitemap.xml", :controller => "home", :action => "sitemap", :format => 'xml'
 end

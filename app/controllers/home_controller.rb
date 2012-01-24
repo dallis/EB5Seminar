@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   before_filter :load_page, :except => :sitemap
+  before_filter :load_city_if_needed, :only => [:agenda, :costs, :speakers, :sponsors]
 
   def index
     @cities = City.all
@@ -28,9 +29,24 @@ class HomeController < ApplicationController
   def contact
   end
 
+  def about
+  end
+
+  def costs
+  end
+
   def sitemap
     headers["Content-Type"] = "text/xml"
     headers["Last-Modified"] = Time.now.utc.strftime("%Y-%m-%dT%H:%M:%S+00:00")
   end
+
+  private
+
+    def load_city_if_needed
+      begin
+        @city = City.find params[:city_id]
+      rescue
+      end      
+    end
 
 end

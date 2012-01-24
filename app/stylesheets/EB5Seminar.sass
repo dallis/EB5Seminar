@@ -16,6 +16,10 @@
   &.disable:hover
     background-position: 0px #{$h}px
 
+=round_corners($x)
+  -webkit-border-radius: #{$x}px
+  -moz-border-radius: #{$x}px
+  border-radius: #{$x}px
 
 #main_menu
   background: url("/images/menu.png")
@@ -42,9 +46,14 @@
   #search_input
     margin-top: 6px
     margin-right: 3px
-    +eb_image_button(154,31,"search.png")
+    margin-left: 5px
+    +eb_image_button(150,31,"search.png")
     &:hover
       background-position: 0px 0px !important
+    input
+      color: white
+      width: 150px
+      font-size: 14px
   #search_link
     margin-top: 6px
     +eb_image_button(35,31,"btn_go.png")    
@@ -141,13 +150,15 @@
   color: #959595
   padding-top: 23px
   margin-right: 2em
+
 #logo
-  height: 55px
+  height: 45px
   padding-top: 10px
   font: 14px "HelveticaNeueLTStd-Roman"
   margin-bottom: 25px
   .title
     font: 33px "HelveticaNeueLTStd-Roman"
+
 #flag_container
   height: 480px
   /*background: url(/images/slices/bg_red_pattern.png) repeat-x 
@@ -254,6 +265,35 @@
     margin-right: 10px
     margin-left: 10px
 
+.page_sidebar
+  float: left
+  width: 25%
+  ul
+    list-style-type: none
+    li
+      list-style-type: none
+      text-align: center
+      padding: 12px 6px
+      margin-bottom: 6px
+      span
+        display: block
+      span.city
+        font-size: 16px
+        font-weight: bold
+      span.date_range
+        font-size: 11px
+        font-weight: normal
+      span.price
+        font-size: 14px
+        font-weight: bold
+        color: red
+      &.active
+        background: #E9E9E9
+        +round_corners(6)
+
+.page_content
+  float: right
+  width: 74%
 
 #slideshow
   width: 980px
@@ -269,4 +309,5 @@
       display: block
       margin: auto
 
-    
+html h1.title
+  color: #D10E0C

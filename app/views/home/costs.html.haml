@@ -1,0 +1,34 @@
+%h1.title
+  - if defined? @city
+    #{@city.name} Costs
+  - else
+    = @page.page_title
+
+.page_sidebar
+  %h3 Upcoming Events
+  %ul
+    - City.upcoming.by_date.each do |city|
+      %li{:class => @city == city ? 'active' : ''}
+        = link_to image_tag(city.photo.url(:medium)), costs_city_path(:city_id => city)
+        %span.city= link_to city.name, costs_city_path(:city_id => city)
+        %span.date_range #{city.event_range}
+        %span.price Price: #{city.price_short}
+
+  - if City.past.count > 0
+    %br
+    %h3 Past Events
+    %ul
+      - City.past.by_date.each do |city|
+        %li{:class => @city == city ? 'active' : ''}
+          = link_to image_tag(city.photo.url(:medium)), costs_city_path(:city_id => city)
+          %span.city= link_to city.name, costs_city_path(:city_id => city)
+          %span.date_range #{city.event_range}
+          %span.price Price: #{city.price_short}
+
+.page_content
+  - if defined? @city
+    = @city.price.html_safe
+  - else
+    = @page.content.html_safe
+
+.clear
